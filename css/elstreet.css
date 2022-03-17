@@ -1,0 +1,128 @@
+body{
+  background-image: url(background.jpg);
+  color:#666666;
+  font-family:sans-serif;
+}
+
+header{
+  background-color:#ffffff;
+  color:#00bf4c;
+  font-family:Helvetica;
+  border-color: #00bf4c;
+  border-style: solid;
+  border-width: thick;
+}
+
+
+#pagesize {
+  background-color:#ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 720px;
+  max-width: 1080px;
+  width:80%;
+}
+
+
+nav{
+  font-family: Helvetica;
+  font-weight:bold;
+  font-size: 16pt;
+  background-color:#3366CC;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+nav a:active{
+  text-decoration: none;
+  color: #000770;
+}
+
+
+
+#buttonLink {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Helvetica;
+  color: #FFFFFF;
+  background-color:#3366CC;
+  padding: 15px 15px;
+  border-radius: 12px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#buttonLink:hover {
+  background-color: #00bf4c;
+  color: white;
+
+
+}
+main{
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color:#ffffff;
+  border-top-color:;
+  border-top-style: solid;
+  border-top-width: thick;
+  border-bottom-color:;
+  border-bottom-style: solid;
+  border-bottom-width: thick;
+}
+
+h2{
+  color:#3366CC;
+  font-family:Helvetica;
+  font-weight: bold;
+}
+h3{
+  color: #5c5c5c;
+  font-family:Helvetica;
+  text-decoration: underline;
+}
+
+h5{
+  color: #454545;
+  font-family:Helvetica;
+}
+
+
+
+img {
+  border-color: #00bf4c;
+  border-width: thick;
+  border-style: solid;
+}
+
+.imgeDescription {
+  position: relative;
+  width: 645px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #00bf4c;
+}
+
+
+footer{
+  background-color: #ffffff;
+  border-color: #00bf4c;
+  border-style: solid;
+  border-width: thick;
+  font-size:.70em;
+  font-style:italic;
+  text-align:center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
