@@ -1,0 +1,274 @@
+@font-face {
+  src: url(../font/Minecraft-Regular.otf);
+  font-family: Minecraft;
+}
+
+body{
+  background-image: url(background2.jpg);
+  color:#000000;
+  font-family:sans-serif;
+}
+
+#link{
+  color:#00bf4c;
+  font-family:Minecraft;
+  border-color: #00bf4c;
+  text-align: center;
+}
+
+#titelheder{
+  background-color:#000000;
+  color:#00bf4c;
+  font-family:Minecraft;
+  border-color: #00bf4c;
+  border-style: solid;
+  border-width: thick;
+}
+
+#titelheder a:active{
+  color:#006b2b;
+}
+
+#headdetail{
+  margin: 0px;
+  background-color:#00bf4c;
+  color:#ffffff;
+  font-family:Minecraft;
+  border-color: #00bf4c;
+  border-style: solid;
+  border-width: thick;
+}
+
+#pagesize {
+  background-color:#000000;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-width: 720px;
+  max-width: 1080px;
+  width:95%;
+}
+
+#line1{
+  border-style: solid;
+  border-color: #00bf4c;
+}
+
+#minecraft{
+  font-family: Minecraft;
+}
+
+#newshead{
+  margin: 0px;
+  font-family:Minecraft;
+  text-align: center;;
+  font-style: italic;
+  font-size: 24pt;
+  border-color: #00bf4c;
+  border-style: solid;
+  border-width: thick;
+}
+
+#Statebuttons{
+  float: right;
+  width: 50%;
+}
+
+
+
+nav{
+  font-family: Minecraft;
+  font-size: 16pt;
+  background-color:#3366CC;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+nav a:active{
+  text-decoration: none;
+  color: #000770;
+}
+
+#headbutton{
+  text-decoration: none;
+  color:#00bf4c;
+}
+
+#buttonLink {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Minecraft;
+  color: #00bf4c;
+  background-color:#000000;
+  padding: 10;
+  border-top: 1.5px solid #000000;
+  border-left: 1.5px solid #000000;
+  border-right: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+  margin: 0px;
+  border-radius: 5px;
+}
+
+#buttonLink:hover {
+  transition-duration: 0.4s;
+  background-color: #00bf4c;
+  color: white;
+  border-top-color: #00bf4c;
+  border-left-color: #00bf4c;
+  border-right-color: #26f076;
+  border-bottom-color: #26f076;
+}
+
+
+main{
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color:#000000;
+  border-top-color: #000000;
+  border-top-style: solid;
+  border-top-width: medium;
+  border-bottom-color: #000000;
+  border-bottom-style: solid;
+  border-bottom-width: medium;
+}
+
+h2{
+  color:#00bf4c;
+  font-size: 24pt;
+  font-family: Minecraft;
+}
+h3{
+  color: #00bf4c;
+  font-family:Minecraft;
+  font-weight: bold;
+  margin: 5px;
+}
+
+h4{
+  font-family:Minecraft;
+  font-weight: bold;
+  margin: 5px;
+}
+
+h5{
+  color: #454545;
+  font-family:Helvetica;
+}
+
+table{
+  font-family: Minecraft;
+  color: #00bf4c;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-collapse: collapse;
+  padding: 10px;
+  width: 100%;
+}
+
+th {
+  width: 50%;
+  font-weight: bold;
+  border-right: 2px solid;
+  padding: 10px;
+}
+
+.custom-select {
+  font-family: Minecraft;
+  font-size: 14pt;
+  padding: 10px;
+  color: #00bf4c;
+  border-radius: 5px;
+  border-top: 0px solid #00bf4c;
+  border-bottom: 0px solid #00bf4c;
+  border-left: 0px solid #00bf4c;
+  border-right: 0px solid #00bf4c;
+  background-color: #000000;
+}
+
+.custom-text {
+  font-family: Minecraft;
+  font-size: 12pt;
+  padding: 10px;
+  color: #00bf4c;
+  border-radius: 0px;
+  border-top: 0px solid #00bf4c;
+  border-bottom: 2px solid #00bf4c;
+  border-left: 0px solid #00bf4c;
+  border-right: 0px solid #00bf4c;
+  background-color: #000000;
+}
+
+#underline{
+  text-decoration: underline;
+}
+
+
+
+#img {
+  border-color: #00bf4c;
+  border-width: thick;
+  border-style: solid;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.box {
+   display: flex;
+   align-items:center;
+   justify-content: center;
+}
+
+.imgeDescription {
+  position: relative;
+  width: 645px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #00bf4c;
+}
+
+.iconDescription {
+  position: relative;
+  color: #ffffff;
+}
+
+.headdetail {
+  margin: 0px;
+  background-color:#00bf4c;
+  color:#ffffff;
+  font-family:Minecraft;
+  border-color: #00bf4c;
+  border-style: solid;
+  border-width: thick;
+}
+
+footer{
+  font-family: Minecraft;
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #00bf4c;
+  border-style: solid;
+  border-width: thick;
+  font-size:.70em;
+  font-style:italic;
+  text-align:center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
