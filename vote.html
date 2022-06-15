@@ -1,0 +1,65 @@
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="css/vote.css"/>
+<head>
+<title>Elstreet Vote Page</title>
+<link rel="icon" type="image/x-icon" href="assest/favicon.ico">
+<meta charset="utf-8">
+</head>
+<body>
+
+<div id="pagesize">
+
+<header>
+  <div id="titelheder">
+  <a id="headbutton" href="index.html">
+    <h1 align=center>Elstreet Connection</h1>
+  </a>
+</div>
+<h4 align=center id="displayDateTime" class="headdetail"></h4>
+
+<script type="text/javascript">
+  var today = new Date();
+  var date = today.getDate();
+  var month = today.getMonth();
+  var monthlist = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var year = today.getFullYear();
+
+  document.getElementById("displayDateTime").innerHTML = monthlist[month] + " " + date + ", " + year;
+</script>
+</header>
+
+<div>
+<main>
+  <h2 align=center>Vote</h2>
+  <h3 align=center>July 2022 Presidential Elections</h3>
+  <br><br><br>
+
+  <div align=center>
+  <form class="center" method="POST" action="https://script.google.com/macros/s/AKfycbwkFB7GiRnOL2BWrNDHClAckfKud5PZqd-QHciq5uVV8Ubijz0Jkrea89S1vR1Hm4Q7/exec">
+    <div>
+    <label for="ID"></label>
+    <input name="ID" type="number" placeholder="ID Number" required>
+  </div>
+  <div>
+    <input name="Candidate" type="text" placeholder="Candidate" required>
+  </div>  
+    <button type="submit">Send</button>
+  </form>
+  </div>
+
+
+</main>
+<div>
+
+
+<footer>This site will be in consent development as items are added and changed.<br>
+  The production of this site is done by the Elstreet Federal Government which is also the owner of the site and its contents.<br>
+  Credit to GitHub for hosting the site.<br><br>
+  Checkout Our Discord!!!
+<a href="https://discord.gg/ZkvtwQ">Elstreet Server<a/></br>
+</footer>
+
+
+</div>
+</body>
+</html>

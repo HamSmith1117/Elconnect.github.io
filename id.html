@@ -1,0 +1,133 @@
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="css/elstreetID.css"/>
+<head>
+<title>Elstreet ID Page</title>
+<link rel="icon" type="image/x-icon" href="assest/favicon.ico">
+<meta charset="utf-8">
+</head>
+<body>
+
+<div id="pagesize">
+
+<header>
+  <div id="titelheder">
+  <a id="headbutton" href="index.html">
+    <h1 align=center>Elstreet Connection</h1>
+  </a>
+</div>
+<h4 align=center id="displayDateTime" class="headdetail"></h4>
+
+<script type="text/javascript">
+  var today = new Date();
+  var date = today.getDate();
+  var month = today.getMonth();
+  var monthlist = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var year = today.getFullYear();
+
+  document.getElementById("displayDateTime").innerHTML = monthlist[month] + " " + date + ", " + year;
+</script>
+</header>
+
+
+<div>
+<main>
+  <h2 align=center>ID Generator</h2>
+  <br>
+
+  <hr>
+  <h3 align=center id="displayGamertag">Name</h3>
+  <h2 align=center id="displayID">000 - 000 - 000000</h2>
+  <hr>
+
+  <div align=center>
+    <button onclick="GenerateID()" id="buttonLink" class="center" style="font-size: 14pt">Generate ID</button>
+
+    <script>
+    function GenerateID(){
+      var g = document.getElementById ("gtag").value;
+      var c = document.getElementById ("pcount").value;
+      var pr = document.getElementById ("primaryR").value;
+      var num1 = Math.floor(Math.random() * 10);
+      var num2 = Math.floor(Math.random() * 10);
+      var num3 = Math.floor(Math.random() * 10);
+      var num4 = Math.floor(Math.random() * 10);
+      var num5 = Math.floor(Math.random() * 10);
+      var rand = '1' + num1 + num2 + num3 + num4 + num5;
+
+      document.getElementById("displayGamertag").innerHTML = g;
+      document.getElementById("displayID").innerHTML = c + " - " + pr + " - " + rand;
+    }
+    </script>
+  </div>
+  <br><br>
+
+  <table align=center>
+    <tr>
+      <th id="underline">Player Details</th>
+      <th id="underline">Pick State Location</th>
+    </tr>
+    <tr>
+      <th>
+        Gamertag:&nbsp;&nbsp;&nbsp;<input type="text" id="gtag" class="custom-text"><br><br><br>
+        Player Count:&nbsp;&nbsp;&nbsp;<input type="text" id="pcount" class="custom-text">
+      </th>
+      <th>
+        <select id="primaryR" class="custom-select" name="State">
+          <option value=1>Elstreet</option>
+          <option value=2>Savannah</option>
+          <option value=3>Mt. State</option>
+          <option value=4>Green State</option>
+          <option value=5>Catskills</option>
+          <option value=6>Redmond</option>
+          <option value=7>Oregon</option>
+          <option value=8>End State</option>
+          <option value=9>Columbia</option>
+          <option value=10>Rio</option>
+          <option value=11>Panama</option>
+          <option value=12>Aztec</option>
+          <option value=13>Maine</option>
+          <option value=14>Milwaukee</option>
+          <option value=15>Norway</option>
+          <option value=16>Finland</option>
+          <option value=17>Rocky</option>
+          <option value=18>Maya</option>
+          <option value=19>Nova Scotia</option>
+          <option value=20>Galway</option>
+          <option value=21>Anchorage</option>
+          <option value=22>Victoria</option>
+          <option value=23>Alberta</option>
+          <option value=24>Vendetta</option>
+          <option value=25>Carolina</option>
+          <option value=26>Siberia</option>
+          <option value=27>Dutchess</option>
+          <option value=28>Salt Point</option>
+          <option value=29>Australia</option>
+          <option value=30>Arcadia</option>
+          <option value=31>Chelsea</option>
+          <option value=32>Dune</option>
+          <option value=33>Cyrene</option>
+        </select>
+      </th>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <a id="link" align=center href="https://docs.google.com/spreadsheets/d/1cKwxTIDZLmtE5Rg06_RrAR_S3UJGDnBUH0jwSYJhSdc/edit?usp=sharing">Elstreet ID Database<a/></br>
+
+<br><br>
+</main>
+<div>
+
+
+<footer>This site will be in consent development as items are added and changed.<br>
+  The production of this site is done by the Elstreet Federal Government which is also the owner of the site and its contents.<br>
+  Credit to GitHub for hosting the site.<br><br>
+  Checkout Our Discord!!!
+<a href="https://discord.gg/ZkvtwQ">Elstreet Server<a/></br>
+</footer>
+
+
+</div>
+</body>
+</html>
