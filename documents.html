@@ -1,0 +1,256 @@
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="css/elstreet.css"/>
+<head>
+<title>Elstreet Documents Page</title>
+<link rel="icon" type="image/x-icon" href="assest/favicon.ico">
+<meta charset="utf-8">
+</head>
+<body>
+
+<div id="pagesize">
+
+<header>
+  <div id="titelheder">
+  <a id="headbutton" href="index.html">
+    <h1 align=center>Elstreet Connection</h1>
+  </a>
+</div>
+<h4 align=center id="displayDateTime" class="headdetail"></h4>
+
+<script type="text/javascript">
+  var today = new Date();
+  var date = today.getDate();
+  var month = today.getMonth();
+  var monthlist = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var year = today.getFullYear();
+  var event = "";
+  var begin = 2016;
+  var timepass = year - begin;
+
+  //Events
+  //Jan Events
+  if (date == 15 && monthlist[month] == "January")
+  {
+    event = " 2016 Corruption ";
+  }
+  if (date == 25 && monthlist[month] == "January")
+  {
+    event = " " + timepass + " Years Of Elstreet ";
+  }
+  //May Events
+  if (date == 13 && monthlist[month] == "May")
+  {
+    event = " Constitution Day ";
+  }
+  if (date == 25 && monthlist[month] == "May")
+  {
+    event = " Ender Dragon Defeated ";
+  }
+  //Jun Events
+  if (date == 13 && monthlist[month] == "June")
+  {
+    event = " Wither & Mansion Defeated ";
+  }
+  //Jul Events
+  if (date == 1 && monthlist[month] == "July")
+  {
+    event = " Government Day ";
+  }
+  if (date == 13 && monthlist[month] == "July")
+  {
+    event = " 2018 Corruption ";
+  }
+  //Oct Events
+  if (date == 26 && monthlist[month] == "October")
+  {
+    event = " 1st Wrold Anniversary ";
+  }
+
+  document.getElementById("displayDateTime").innerHTML = monthlist[month] + " " + date + ", " + year + " " + event;
+</script>
+</header>
+
+<!--Navigation Bar-->
+<nav align=center>
+  <a href="index.html">
+    <img src="assest/homeicon.png" alt="Home Page Link" style="width:22px;height:22px;">
+    Home
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="news.html">
+    <img src="assest/newsicon.png" alt="News Page Link" style="width:22px;height:22px;">
+    News
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="government.html">
+    <img src="assest/governmenticon.png" alt="Government Page Link" style="width:22px;height:22px;">
+    Government
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="documents.html">
+    <img src="assest/documentsicon.png" alt="Documents Page Link" style="width:23px;height:20px;">
+    Documents
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="calculator.html">
+    <img src="assest/calculatoricon.png" alt="Calculator Page Link" style="width:19px;height:22px;">
+    Calculator
+  </a>
+</nav>
+
+<div>
+<main>
+  <!--Main Title-->
+  <h2 align=center>Documents</h2>
+  <br>
+
+  <hr id="line1">
+  <h3>Laws & Acts:</h3>
+
+  <article align=center>
+    <a id="buttonLink" href="https://docs.google.com/document/d/1usmfcfTEZyAAYHRqHIjOFQK3F3HBApUIylzbwPhTXIM/edit?usp=sharing">The Constitution</a>&nbsp;&nbsp;&nbsp;
+    <a id="buttonLink" href="https://docs.google.com/document/d/1bL6-MUPYOjIKLzw1meLpKlssnjK5Zs13gfKE-Jammfo/edit?usp=sharing">Bill Of Rights</a>&nbsp;&nbsp;&nbsp;
+    <a id="buttonLink" href="https://docs.google.com/document/d/1poLtWi92-uvaasn5VC7Jeq1TbhgnGH9xn1SvjfUGn2U/edit?usp=sharing">Federal Laws</a>&nbsp;&nbsp;&nbsp;
+
+    <a id="buttonLink" href="https://docs.google.com/document/d/1X0fw3sSldHG_0eBLEntp4gEy5D_cKtETTEQYGEtMOHQ/edit?usp=sharing">I: House Rules</a>&nbsp;&nbsp;&nbsp;
+    <a id="buttonLink" href="https://docs.google.com/document/d/1NOhcQNbPqBBf2FV67XGZ2OXssPgVmnYzvkJJRC9Etzk/edit?usp=sharing">II: Election Laws</a>&nbsp;&nbsp;&nbsp;
+    <a id="buttonLink" href="https://docs.google.com/document/d/145y5E1j0iiFgivUZMGM4Oxpmuq-qqXvtJqhSxXUZAIU/edit?usp=sharing">III: Currency Act</a>&nbsp;&nbsp;&nbsp;
+    <a id="buttonLink" href="https://docs.google.com/document/d/1FUNJ1QHvUH6VdbracJwI1spir6yr3ZaHpd_DcUn5vNo/edit?usp=sharing">IV: Citizenship Act</a>&nbsp;&nbsp;&nbsp;
+    <a id="buttonLink" href="https://docs.google.com/document/d/17ZRhvd7YtPxNkzfNGHB1cWU5FR_PHPwP-qW9gAQjF6I/edit?usp=sharing">V: ID Laws</a>&nbsp;&nbsp;&nbsp;
+    <a id="buttonLink" href="https://docs.google.com/document/d/10Qwzdnyl2dDPvjd9-WHChUW-8OcGfnQqj2a1kdi3XhQ/edit?usp=sharing">VI: ID Layout</a>&nbsp;&nbsp;&nbsp;
+    <a id="buttonLink" href="https://docs.google.com/document/d/1-jXNhk0RJ26LqgLgU5I0FoM_N3rRBaWL6cTqbJLOQNo/edit?usp=sharing">VII: Land Act</a>&nbsp;&nbsp;&nbsp;
+    <a id="buttonLink" href="https://docs.google.com/document/d/1GBQd9A7di-X1nuCXM1NNrQU3XVXDcwBxcV0iIU9X7W8/edit?usp=sharing">VIII: Animal & Entities Act</a>&nbsp;&nbsp;&nbsp;
+
+    <a id="buttonLink" href="https://docs.google.com/document/d/1VwkYB3qKjUu7dE22SQfPmdwXwkXLTr5m4zMM8Sj4Tes/edit?usp=sharing">IX: Duplication Act</a>&nbsp;&nbsp;&nbsp;
+    <a id="buttonLink" href="https://docs.google.com/document/d/1NNKbr1k-g23Zsp2AlKrfDS13NgPUjmifoQ6pSN5Kx1o/edit?usp=sharing">X: Equality Act</a>&nbsp;&nbsp;&nbsp;
+    <a id="buttonLink" href="https://docs.google.com/document/d/1h5aTzoyhtl0agwgem30dQ3YJaqJArdYacUQ9bFJE0ZY/edit?usp=sharing">XI: Retirment Act</a>&nbsp;&nbsp;&nbsp;
+    <a id="buttonLink" href="https://docs.google.com/document/d/1WR6IJXV0NTLfOCwlaxRKiGGvp1Uml8yYCYOEbXdAstw/edit?usp=sharing">XII: Service Payment Act</a>&nbsp;&nbsp;&nbsp;
+    <a id="buttonLink" href="https://docs.google.com/document/d/1Ohtz5m-rCc9jAgQ48o63SA0SGYkZa7Apb0dJpjQlzBc/edit?usp=sharing">XIII: World Difficulty Act</a>&nbsp;&nbsp;&nbsp;
+    <a id="buttonLink" href="https://docs.google.com/document/d/1KiDlGZR8YyVvyMj-0T-f-wFTqWKM0FXLbHvc-qHm8R0/edit?usp=sharing">XIV: NRS Act</a>&nbsp;&nbsp;&nbsp;
+    <a id="buttonLink" href="https://docs.google.com/document/d/14QEltaOkVL34nSDoaHsVVTn6IPjYMwQ8UVoz10tunY0/edit?usp=sharing">XV: Easy Difficulty Act</a>&nbsp;&nbsp;&nbsp;
+    <a id="buttonLink" href="https://docs.google.com/document/d/13QytKyYBtUKDmKutCHTFRkh1Fg7upP9ibFvS7yuImWY/edit?usp=sharing">XVI: Units & Measurement Act</a>&nbsp;&nbsp;&nbsp;
+
+    </article>
+
+  <hr id="line1">
+  <h3>Maps:</h3><br><br>
+  <div class="slideshow-container">
+    <div class="mySlides fade" align="center">
+      <div class="imgeDescription">Spawn Map</div>
+      <img id="img" src="maps/Spawn Map Clean.png" style="width:750px">
+      <div class="imgeDescriptionLink">Full Image:&nbsp;
+        <a href="maps/Spawn Map Networking.png">Networking</a>&nbsp;&nbsp;
+        <a href="maps/Spawn Map Clean.png">Clean</a></div>
+    </div>
+
+    <div class="mySlides fade" align="center">
+      <div class="imgeDescription">Map 2</div>
+      <img id="img" src="maps/Map 2 Clean.png" style="width:750px">
+      <div class="imgeDescriptionLink">Full Image:&nbsp;
+        <a href="maps/Map 2 Networking.png">Networking</a>&nbsp;&nbsp;
+        <a href="maps/Map 2 Clean.png">Clean</a></div>
+    </div>
+
+    <div class="mySlides fade" align="center">
+      <div class="imgeDescription">Map 3</div>
+      <img id="img" src="maps/Map 3 Clean.png" style="width:750px">
+      <div class="imgeDescriptionLink">Full Image:&nbsp;
+        <a href="maps/Map 3 Networking.png">Networking</a>&nbsp;&nbsp;
+        <a href="maps/Map 3 Clean.png">Clean</a></div>
+    </div>
+
+    <div class="mySlides fade" align="center">
+      <div class="imgeDescription">Map 4</div>
+      <img id="img" src="maps/Map 4 Clean.png" style="width:750px">
+      <div class="imgeDescriptionLink">Full Image:&nbsp;
+        <a href="maps/Map 4 Networking.png">Networking</a>&nbsp;&nbsp;
+        <a href="maps/Map 4 Clean.png">Clean</a></div>
+    </div>
+
+    <div class="mySlides fade" align="center">
+      <div class="imgeDescription">Map 5</div>
+      <img id="img" src="maps/Map 5 Clean.png" style="width:750px">
+      <div class="imgeDescriptionLink">Full Image:&nbsp;
+        <a href="maps/Map 5 Networking.png">Networking</a>&nbsp;&nbsp;
+        <a href="maps/Map 5 Clean.png">Clean</a></div>
+    </div>
+
+    <div class="mySlides fade" align="center">
+      <div class="imgeDescription">Green State</div>
+      <img id="img" src="maps/Green State Clean.png" style="width:750px">
+      <div class="imgeDescriptionLink">Full Image:&nbsp;
+        <a href="maps/Green State Networking.png">Networking</a>&nbsp;&nbsp;
+        <a href="maps/Green State Clean.png">Clean</a></div>
+    </div>
+
+    <div class="mySlides fade" align="center">
+      <div class="imgeDescription">World Map</div>
+      <img id="img" src="maps/World Map.png" style="width:750px">
+      <div class="imgeDescriptionLink">Full Image:&nbsp;
+        <a href="maps/World Map.png">Clean</a></div>
+    </div>
+    <br>
+  </div>
+  <div align="center">
+    <a class="prev" id="buttonLink" onclick="plusSlides(-1)">&nbsp;&#10094;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="next" id="buttonLink" onclick="plusSlides(1)">&nbsp;&#10095;&nbsp;</a>
+  </div>
+
+  <script>
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) 
+{
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) 
+{
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) 
+{
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+  </script>
+
+
+  <hr id="line1">
+  <h3 align=center>Need More?</h3>
+  <p align=center id=minecraft>Find more documents on our google drive</p>
+  <div align=center>
+  <a id=minecraft href="https://drive.google.com/drive/folders/190AQvSTQg0haavfmeMagm936oL1K1i8e?usp=sharing">Elstreet Drive<a/>
+  </div>
+  <br>
+</main>
+<div>
+
+
+  <footer>This site will be in consent development as items are added and changed.<br>
+    The production of this site is done by the Elstreet Federal Government which is also the owner of the site and its contents.<br>
+    Credit to GitHub for hosting the site.<br><br>
+    Website Version: 1.0 July 1, 2022
+  </footer>
+
+
+</div>
+</body>
+</html>
