@@ -1,0 +1,132 @@
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="css/elstreet.css"/>
+<head>
+<title>Elstreet Home Page</title>
+<link rel="icon" type="image/x-icon" href="assest/favicon.ico">
+<meta charset="utf-8">
+</head>
+<body>
+
+<div id="pagesize">
+
+<header>
+  <div id="titelheder">
+  <a id="headbutton" href="index.html">
+    <h1 align=center>Elstreet Connection</h1>
+  </a>
+</div>
+<h4 align=center id="displayDateTime" class="headdetail"></h4>
+
+<script type="text/javascript">
+  var today = new Date();
+  var date = today.getDate();
+  var month = today.getMonth();
+  var monthlist = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var year = today.getFullYear();
+  var event = "";
+  var begin = 2016;
+  var timepass = year - begin;
+
+  //Events
+  //Jan Events
+  if (date == 15 && monthlist[month] == "January")
+  {
+    event = " 2016 Corruption ";
+  }
+  if (date == 25 && monthlist[month] == "January")
+  {
+    event = " " + timepass + " Years Of Elstreet ";
+  }
+  //May Events
+  if (date == 13 && monthlist[month] == "May")
+  {
+    event = " Constitution Day ";
+  }
+  if (date == 25 && monthlist[month] == "May")
+  {
+    event = " Ender Dragon Defeated ";
+  }
+  //Jun Events
+  if (date == 13 && monthlist[month] == "June")
+  {
+    event = " Wither & Mansion Defeated ";
+  }
+  //Jul Events
+  if (date == 1 && monthlist[month] == "July")
+  {
+    event = " Government Day ";
+  }
+  if (date == 13 && monthlist[month] == "July")
+  {
+    event = " 2018 Corruption ";
+  }
+  //Oct Events
+  if (date == 26 && monthlist[month] == "October")
+  {
+    event = " 1st Wrold Anniversary ";
+  }
+
+  document.getElementById("displayDateTime").innerHTML = monthlist[month] + " " + date + ", " + year + " " + event;
+</script>
+</header>
+
+<!--Navigation Bar-->
+<nav align=center>
+  <a href="index.html">
+    <img src="assest/homeicon.png" alt="Home Page Link" style="width:20px;height:20px;">
+    Home
+  </a>
+  &nbsp;&nbsp;
+  <a href="news.html">
+    <img src="assest/newsicon.png" alt="News Page Link" style="width:20px;height:20px;">
+    News
+  </a>
+  &nbsp;&nbsp;
+  <a href="government.html">
+    <img src="assest/governmenticon.png" alt="Government Page Link" style="width:20px;height:20px;">
+    Government
+  </a>
+  &nbsp;&nbsp;
+  <a href="documents.html">
+    <img src="assest/documentsicon.png" alt="Documents Page Link" style="width:21px;height:18px;">
+    Documents
+  </a>
+  &nbsp;&nbsp;
+  <a href="calculator.html">
+    <img src="assest/calculatoricon.png" alt="Calculator Page Link" style="width:17px;height:20px;">
+    Calculator
+  </a>
+</nav>
+
+<div>
+<main>
+  <!--Main Title-->
+  <h2 align=center>Home</h2>
+  <br>
+
+  <div align="center">
+    <div class="imgeDescription">Elstreet City</div>
+    <img id="img" src="assest/Skyline.png" style="width:750px">
+    <div class="imgeDescriptionLink"></div>
+
+<p align="center" id="WelcomeText">Welcome to the  Elstreet Communication Website!</p>
+<br>
+<p align="center" id="homeText">This site is used as an access point to information and documents that may be useful for people who are involved and or interested in the ongoings of the Elstreet wrold. On this site, expect to see postings of news events, and certain activities be hosted on the site.
+
+<br><br>It is important to note that the site is in consistent state of development and the look and feel of the site may change as development continues.
+</p>
+
+</main>
+<div>
+
+
+  <footer>This site will be in consent development as items are added and changed.<br>
+    The production of this site is done by the Elstreet Federal Government which is also the owner of the site and its contents.<br>
+    Credit to GitHub for hosting the site.<br><br>
+    Website Version: 1.0 July 1, 2022
+  </footer>
+
+
+</div>
+</body>
+</html>
