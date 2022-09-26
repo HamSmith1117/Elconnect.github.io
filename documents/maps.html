@@ -1,0 +1,217 @@
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="css/elstreet.css"/>
+<head>
+<title>Elstreet Calculator Page</title>
+<link rel="icon" type="image/x-icon" href="assest/favicon.ico">
+<meta charset="utf-8">
+</head>
+<body>
+<div id="pagesize">
+
+<header>
+</header>
+
+<!--Navigation Bar-->
+<nav style="padding: 2px;">
+  <table style="border-width: 0px; width: 100%;">
+    <tr>
+      <th style="border-width: 0px; font-weight: normal; text-align: left; text-decoration: none; width: 120px; color: white;">
+          Elstreet<br>Communication
+      </th>
+      <th style="border-width: 0px; font-weight: normal; text-align: left; text-decoration: none;">
+        <a href="index.html">
+          <img src="assest/homeicon.png" alt="Home Page Link" style="width:17px;height:17px;">
+          Home
+        </a>
+        &nbsp;&nbsp;
+        <a href="news.html">
+          <img src="assest/newsicon.png" alt="News Page Link" style="width:17px;height:17px;">
+          News
+        </a>
+        &nbsp;&nbsp;
+        <a href="government.html">
+          <img src="assest/governmenticon.png" alt="Government Page Link" style="width:17px;height:17px;">
+          Government
+        </a>
+        &nbsp;&nbsp;
+        <a href="documents.html">
+          <img src="assest/documentsicon.png" alt="Documents Page Link" style="width:18px;height:15px;">
+          Documents
+        </a>
+        &nbsp;&nbsp;
+        <a href="calculator.html">
+          <img src="assest/calculatoricon.png" alt="Calculator Page Link" style="width:14px;height:17px;">
+          Calculator
+        </a>
+      </th>
+    </tr>
+  </table>
+</nav>
+
+<div>
+    <main>
+      <br><br>
+      <p align=center style="font-size: 14pt; margin-top: 0px; margin-bottom: 10px;" id="minecraft">Regional and World Maps</p>
+      <br>
+
+      <p align=center style="font-size: 12pt; margin-top: 10px; margin-bottom: 5px;" id="minecraft">Locate Your Map</p>
+      <p align=center style="font-size: 10pt; margin-top: 0px; margin-bottom: 10px;" id="minecraft">Enter coords to see which Map the coords are in</p>
+      
+      <!--Find Which Map-->
+      <form align=center style="font-size: 12pt" action="/action page. php" id="minecraft">
+        X : <input type="text" id="Xcord">
+        &nbsp;&nbsp;
+        Z : <input type="text" id="Zcord">
+        &nbsp;&nbsp;
+        <button onclick="findmap()" id="buttonLink" style="font-size: 10pt">Find Map</button>
+      </form>
+      
+      <p id="mapfound"></p>
+      
+      <script>
+        function findmap()
+        {
+          var x = document.getElementById ("Xcord").value;
+          var z = document.getElementById ("Zcord").value;
+          
+          document.getElementById("mapfound").innerHTML = "A Map of X:" + x + ", Z:" + z + " is not yet available";
+
+          if ((x > -2300 && x < 2812)  && (z > -764 && z < 1791))
+          {
+            document.getElementById("mapfound").innerHTML = "You are looking for Spawn Map";
+          }
+          if ((x > -1276 && x < 2812)  && (z > -2551 && z < -765))
+          {
+            document.getElementById("mapfound").innerHTML = "You are looking for Map 2";
+          }
+          if ((x > -6910 && x < -1284)  && (z > 1792 && z < 4350))
+          {
+            document.getElementById("mapfound").innerHTML = "You are looking for Map 3";
+          }
+          if ((x > 768 && x < 5374)  && (z > -5375 && z < -2552))
+          {
+            document.getElementById("mapfound").innerHTML = "You are looking for Map 4";
+          }
+          if ((x > -7935 && x < -1792)  && (z > -8446 && z < -5380))
+          {
+            document.getElementById("mapfound").innerHTML = "You are looking for Map 5";
+          }
+        } 
+      </script>
+      
+      <br><br>
+      
+      <p align=center style="font-size: 12pt; margin-top: 10px; margin-bottom: 5px;" id="minecraft">Quick Links</p><br>
+
+      <div id="minecraft" align=center style="font-size: 10pt;">
+        <a style="text-decoration: none; color: #adadad;" href="#Spawn">- Spawn Map</a>
+        &nbsp;&nbsp;&nbsp;
+        <a style="text-decoration: none; color: #adadad;" href="#Map 2">- Map 2</a>
+        &nbsp;&nbsp;&nbsp;
+        <a style="text-decoration: none; color: #adadad;" href="#Map 3">- Map 3</a>
+        &nbsp;&nbsp;&nbsp;
+        <a style="text-decoration: none; color: #adadad;" href="#Map 4">- Map 4</a>
+        &nbsp;&nbsp;&nbsp;
+        <a style="text-decoration: none; color: #adadad;" href="#Map 5">- Map 5</a>
+        &nbsp;&nbsp;&nbsp;
+        <a style="text-decoration: none; color: #adadad;" href="#GreenState">- Green State</a>
+      </div>
+
+      <br><br>
+
+      <div>
+        <div id="Rail"></div>
+        <p align="center" class="imgTitle" style="margin-left: 30%; margin-right: 30%;">Rail System Map</p>
+        <img class="center" id="img" src="maps/National Railroad System Map.png" style="width:60%">
+        <p align="center" class="imgeDescription" style="width:60%;">
+          Full Image:&nbsp;&nbsp;
+          <a href="maps/National Railroad System Map.png">Networking</a>&nbsp;&nbsp;
+        </p>
+
+        <br><br>
+
+        <div id="Nehter"></div>
+        <p align="center" class="imgTitle" style="margin-left: 30%; margin-right: 30%;">Nether Highway Map</p>
+        <img class="center" id="img" src="maps/Nether Highway Map.png" style="width:60%">
+        <p align="center" class="imgeDescription" style="width:60%;">
+          Full Image:&nbsp;&nbsp;
+          <a href="maps/Nether Highway Map.png.png">Networking</a>&nbsp;&nbsp;
+        </p>
+
+        <br><br>
+
+        <div id="Spawn"></div>
+        <p align="center" class="imgTitle" style="margin-left: 30%; margin-right: 30%;">Spawn Map</p>
+        <img class="center" id="img" src="maps/Spawn Map Clean.png" style="width:60%">
+        <p align="center" class="imgeDescription" style="width:60%;">
+          Full Image:&nbsp;&nbsp;
+          <a href="maps/Spawn Map Networking.png">Networking</a>&nbsp;&nbsp;
+          <a href="maps/Spawn Map Clean.png">Clean</a>
+        </p>
+
+        <br><br>
+
+        <div id="Map 2"></div>
+        <p align="center" class="imgTitle" style="margin-left: 30%; margin-right: 30%;">Map 2</p>
+        <img class="center" id="img" src="maps/Map 2 Clean.png" style="width:60%">
+        <p align="center" class="imgeDescription" style="width:60%;">
+          Full Image:&nbsp;&nbsp;
+          <a href="maps/Map 2 Networking.png">Networking</a>&nbsp;&nbsp;
+          <a href="maps/Map 2 Clean.png">Clean</a>
+        </p>
+
+        <br><br>
+
+        <div id="Map 3"></div>
+        <p align="center" class="imgTitle" style="margin-left: 30%; margin-right: 30%;">Map 3</p>
+        <img class="center" id="img" src="maps/Map 3 Clean.png" style="width:60%">
+        <p align="center" class="imgeDescription" style="width:60%;">
+          Full Image:&nbsp;&nbsp;
+          <a href="maps/Map 3 Networking.png">Networking</a>&nbsp;&nbsp;
+          <a href="maps/Map 3 Clean.png">Clean</a>
+        </p>
+
+        <br><br>
+
+        <div id="Map 4"></div>
+        <p align="center" class="imgTitle" style="margin-left: 30%; margin-right: 30%;">Map 4</p>
+        <img class="center" id="img" src="maps/Map 4 Clean.png" style="width:60%">
+        <p align="center" class="imgeDescription" style="width:60%;">
+          Full Image:&nbsp;&nbsp;
+          <a href="maps/Map 4 Networking.png">Networking</a>&nbsp;&nbsp;
+          <a href="maps/Map 4 Clean.png">Clean</a>
+        </p>
+
+        <br><br>
+
+        <div id="Map 5"></div>
+        <p align="center" class="imgTitle" style="margin-left: 30%; margin-right: 30%;">Map 5</p>
+        <img class="center" id="img" src="maps/Map 5 Clean.png" style="width:60%">
+        <p align="center" class="imgeDescription" style="width:60%;">
+          Full Image:&nbsp;&nbsp;
+          <a href="maps/Map 5 Networking.png">Networking</a>&nbsp;&nbsp;
+          <a href="maps/Map 5 Clean.png">Clean</a>
+        </p>
+
+        <br><br>
+
+        <div id="GreenState"></div>
+        <p align="center" class="imgTitle" style="margin-left: 30%; margin-right: 30%;">Green State</p>
+        <img class="center" id="img" src="maps/Green State Clean.png" style="width:60%">
+        <p align="center" class="imgeDescription" style="width:60%;">
+          Full Image:&nbsp;&nbsp;
+          <a href="maps/Green State Networking.png">Networking</a>&nbsp;&nbsp;
+          <a href="maps/Green State Clean.png">Clean</a>
+        </p>
+
+        <br><br>
+      </div>
+
+    </main>
+</div>
+
+<footer>This site will be in consent development as items are added and changed.<br>
+    The production of this site is done by the Elstreet Federal Government which is also the owner of the site and its contents.<br>
+    Credit to GitHub for hosting the site.<br><br>
+    Website Version: 2.0 September 1, 2022
+  </footer>

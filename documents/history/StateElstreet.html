@@ -1,0 +1,330 @@
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="../css/elstreet.css"/>
+<head>
+<title>State Of Elstreet Info Page</title>
+<link rel="icon" type="image/x-icon" href="../assest/favicon.ico">
+<meta charset="utf-8">
+</head>
+<body>
+
+<div id="pagesize">
+
+<header>
+  <div id="titelheder">
+  <a id="headbutton" href="../index.html">
+    <h1 align=center>Elstreet Communication</h1>
+  </a>
+</div>
+<h4 align=center id="displayDateTime" class="headdetail"></h4>
+
+<script type="text/javascript">
+  var today = new Date();
+  var date = today.getDate();
+  var month = today.getMonth();
+  var monthlist = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var year = today.getFullYear();
+  var event = "";
+  var begin = 2016;
+  var timepass = year - begin;
+
+  //Events
+  //Jan Events
+  if (date == 15 && monthlist[month] == "January")
+  {
+    event = " 2016 Corruption ";
+  }
+  if (date == 25 && monthlist[month] == "January")
+  {
+    event = " " + timepass + " Years Of Elstreet ";
+  }
+  //May Events
+  if (date == 13 && monthlist[month] == "May")
+  {
+    event = " Constitution Day ";
+  }
+  if (date == 25 && monthlist[month] == "May")
+  {
+    event = " Ender Dragon Defeated ";
+  }
+  //Jun Events
+  if (date == 13 && monthlist[month] == "June")
+  {
+    event = " Wither & Mansion Defeated ";
+  }
+  //Jul Events
+  if (date == 1 && monthlist[month] == "July")
+  {
+    event = " Government Day ";
+  }
+  if (date == 13 && monthlist[month] == "July")
+  {
+    event = " 2018 Corruption ";
+  }
+  //Oct Events
+  if (date == 26 && monthlist[month] == "October")
+  {
+    event = " 1st Wrold Anniversary ";
+  }
+
+  document.getElementById("displayDateTime").innerHTML = monthlist[month] + " " + date + ", " + year + " " + event;
+</script>
+</header>
+
+<!--Navigation Bar-->
+<nav align=center>
+  <a href="../index.html">
+    <img src="../assest/homeicon.png" alt="Home Page Link" style="width:20px;height:20px;">
+    Home
+  </a>
+  &nbsp;&nbsp;
+  <a href="../news.html">
+    <img src="../assest/newsicon.png" alt="News Page Link" style="width:20px;height:20px;">
+    News
+  </a>
+  &nbsp;&nbsp;
+  <a href="../government.html">
+    <img src="../assest/governmenticon.png" alt="Government Page Link" style="width:20px;height:20px;">
+    Government
+  </a>
+  &nbsp;&nbsp;
+  <a href="../documents.html">
+    <img src="../assest/documentsicon.png" alt="Documents Page Link" style="width:21px;height:18px;">
+    Documents
+  </a>
+  &nbsp;&nbsp;
+  <a href="../calculator.html">
+    <img src="../assest/calculatoricon.png" alt="Calculator Page Link" style="width:17px;height:20px;">
+    Calculator
+  </a>
+</nav>
+
+<div>
+<main>
+  <!--Main Title-->
+  <p id="stateinfotitle" align=center>State Info Of</p>
+  <p class="statename" align=center>Elstreet</p>
+  <div align="center" id="center">
+  <img src="../assest/BlueRegion.png" alt="Calculator Page Link" style="width:100px;height:200px;">
+  </div>
+  <h3 align="center" style="font-style: Italic;">The Emerald State</h3>
+  <br>
+
+  <!--Table of Content-->
+  <hr id="line1">
+  <h3 align="center" style="text-decoration: underline;">Table of Content</h3><br><br>
+
+  <div>
+    <dl>
+      <dt><a style="text-decoration: none; color: #666666;" href="#Geography">Geography</a></dt>
+  
+      <dt><a style="text-decoration: none; color: #666666;" href="#Elstreet_City">Elstreet City</a></dt>
+      
+      <dd><a style="text-decoration: none; color: #adadad;" href="#Inception">- Inception</a></dd>
+      <dd><a style="text-decoration: none; color: #adadad;" href="#Slim_Square">- Slim Square</a></dd>
+      <dd><a style="text-decoration: none; color: #adadad;" href="#Elstreet_Avenue">- Elstreet Avenue</a></dd>
+      <dd><a style="text-decoration: none; color: #adadad;" href="#Factory_Area">- Factory Area</a></dd>
+      <dd><a style="text-decoration: none; color: #adadad;" href="#2017_Development">- 2017 Development</a></dd>
+      <dd><a style="text-decoration: none; color: #adadad;" href="#2018_to_2019_Expansion">- 2018 to 2019 Expansion</a></dd>
+      <dd><a style="text-decoration: none; color: #adadad;" href="#Duke_Theater_Area">- Duke Theater Area</a></dd>
+      <dd><a style="text-decoration: none; color: #adadad;" href="#Subway_System">- Subway System</a></dd>
+      <br>
+  
+      <dt><a style="text-decoration: none; color: #666666;" href="#New_Hope">New Hope</a></dt>
+  
+      <dt><a style="text-decoration: none; color: #666666;" href="#Kingston_and_Reaper">Kingston and Reaper</a></dt>
+      <br>
+    </dl>
+  </div>
+  
+  <br>
+
+<!--Geography-->
+<div id="Geography"></div>
+<hr id="line1">
+<h3 align="center" style="text-decoration: underline;">Geography</h3><br><br>
+    <div align="center">
+      <div class="imgeDescription">State Map</div>
+      <img id="img" src="../maps/Elstreet State Map.png" style="width:600px">
+      <div class="imgeDescriptionLink" style="width: 588px">Full Image:&nbsp;
+        <a href="../maps/Elstreet State Map.png">Clean</a></div>
+    </div>
+<p id="minecraft" style="margin-left: 50px; margin-right: 50px; margin-top: 50px; margin-bottom: 50px">Elstreet is divided into 4 jurisdictions, Elstreet City, New Hope City, Kingston, and Reaper. The largest of which is Elstreet City covering the majority of the land area of the State while also being home to the largest City on the server. Reaper on the other hand is the opposite of Elstreet City and is the most undeveloped part of the State.<br><br>
+  The State borders are made up of the Elstreet river to the north, a large ocean in the east, and along a fence line marking the southern and western borders.<br><br>
+  The geography of the State has changed a lot since the development of the city. Originally the State had four larger mountains running across the center of the State but today only two of them still exist due to a lot of the State being flattened for development.<br><br>
+  The northern section of the State mostly consisted of plains except in the northeast section where there's a decently sized forest and a swamp biome. While there are very little original trees left, the forested areas of the State have surprisingly been preserved over the years except for the one forest that was located in the center of the State.<br><br>
+  Overall the area was the perfect starting point for a survival world which is why the area has always been in the consistent state of development since the very beginning.<br><br>
+</p>
+
+
+<table align=center  style="border-left: 0px; border-right: 0px; padding: 0px; width: 90%;">
+  <tr>
+    <th style="border-left: 0px; border-right: 0px; padding: 0px; text-decoration: none;">2016</th>
+    <th style="border-left: 0px; border-right: 0px; padding: 0px; text-decoration:  none;">2021</th>
+  </tr>
+    <td style="border-right: 0,10,0,0px; padding: 5px; text-align: center; background-color: #00bf4c; font-size: 10pt; color: white;">
+      <img src="../images/Minecraft 11_15_2021 2_28_18 PM.png" style="width: 100%;"/><br>
+
+      <a href="../images/Minecraft 11_15_2021 2_28_18 PM.png">Full Image</a><br></td>
+
+    <td style="border-right: 0,10,0,0px; padding: 5px; text-align: center; background-color: #00bf4c; font-size: 10pt; color: white;">
+      <img src="../images/Minecraft 11_15_2021 3_01_22 PM.png"style="width: 100%;"/><br>
+
+      <a href="../images/Minecraft 11_15_2021 3_01_22 PM.png">Full Image</a><br></td>
+</table>
+
+
+<br>
+
+<!--Elstreet City-->
+<div id="Elstreet_City"></div>
+<hr id="line1">
+<h3 align="center" style="text-decoration: underline;">Elstreet City</h3><br><br>
+
+<p id="minecraft" style="margin-left: 50px; margin-right: 50px; margin-top: 0px; margin-bottom: 0px; text-decoration: underline;">Introduction</p>
+
+<p id="minecraft" style="margin-left: 50px; margin-right: 50px; margin-top: 30px; margin-bottom: 50px">A lot can be said about Elstreet City, it is the first area to be developed in the world and is the spawn location of the server, therefore there is a lot of history in the area and it is very difficult to nicely cover everything that has happened.
+</p>
+
+<div id="Inception"></div>
+<div align="center">
+  <div class="imgeDescription">Elstreet City January 2016</div>
+  <img id="img" src="../history/Elstreet/1.jpg" style="width:600px">
+  <div class="imgeDescriptionLink" style="width: 588px">Full Image:&nbsp;
+    <a href="../history/Elstreet/1.jpg">Clean</a></div>
+</div>
+
+<!--Inception-->
+<p id="minecraft" style="margin-left: 50px; margin-right: 50px; margin-top: 50px; margin-bottom: 0px; text-decoration: underline;">Inception</p>
+
+<p id="minecraft" style="margin-left: 50px; margin-right: 50px; margin-top: 30px; margin-bottom: 50px">The City and also the server itself was started back on January 25, 2016 at this time the city was nothing more than a small village nested in a plains biome. After spawning and emerging himself from a cave, The Bandit714 got a nice view of the village. One of the first things to be done was a lot of landscaping and clean up work of the village, and the creation of the first building which is the church located on the south end of Church Street.<br><br>
+  Another thing to note is when the players Eccentric Mindz and Broken Bones 2002 briefly joined the world. They both were still blaming The Bandit714 for the corruption of the first Elstreet world and therefore had no interest in starting another world, but as The Bandit was building his current house in the city, Eccentric Mindz would find the first ever pink sheep and trapped it in the basement of The Bandit’s which it stayed until it sadly despawned in early 2020.<br><br>
+</p>
+
+<div id="Slim_Square"></div>
+<div align="center">
+  <div class="imgeDescription">Elstreet City July 2016</div>
+  <img id="img" src="../history/Elstreet/12.jpg" style="width:600px">
+  <div class="imgeDescriptionLink" style="width: 588px">Full Image:&nbsp;
+    <a href="../history/Elstreet/12.jpg">Clean</a></div>
+</div>
+
+<!--Slim Square-->
+<p id="minecraft" style="margin-left: 50px; margin-right: 50px; margin-top: 50px; margin-bottom: 0px; text-decoration: underline;">Slim Square</p>
+
+<p id="minecraft" style="margin-left: 50px; margin-right: 50px; margin-top: 30px; margin-bottom: 50px">One of the first expansions to be done in the city was done over on the northern end in early February of 2016, this area was specifically planned out for the development of larger skyscrapers which the first was quickly built not long after the area was ready. Next to be built was the MOTV which over the years has gone through many redesigns, after that was the Elstreet Hotel built in April of 2016. At the time of its construction it was the largest brick building to be built and took a lot of exploring to find clay in order to finish it.<br><br>
+  During the bing development boom in the summer of 2016, as new areas of the world like Savannah and Mt. State would become the center focus, The Bandit714 would briefly go back to Elstreet City to work on what was at the time the largest skyscraper in the city. It is located at the very north end of Slim Square and has a recognizable design with its large lights at the top of the Skyscraper. Initially the area where the building site used to be a pumpkin Pie shop but after it became abandoned by The Bandit, he decided it would be better to put a skyscraper there instead. During this time The Bandit was listening to an artist known as Fatboy Slim, which is how the area was named Slim Avenue or Slim Square.<br><br>
+</p>
+
+<div id="Elstreet_Avenue"></div>
+<div align="center">
+  <div class="imgeDescription">Elstreet Avenue 2016</div>
+  <img id="img" src="../history/Elstreet/Screen Shot 2022-07-30 at 9.07.30 PM.png" style="width:600px">
+  <div class="imgeDescriptionLink" style="width: 588px">Full Image:&nbsp;
+    <a href="../history/Elstreet/Screen Shot 2022-07-30 at 9.07.30 PM.png">Clean</a></div>
+</div>
+
+<!--Elstreet Avenue-->
+<p id="minecraft" style="margin-left: 50px; margin-right: 50px; margin-top: 50px; margin-bottom: 0px; text-decoration: underline;">Elstreet Avenue</p>
+
+<p id="minecraft" style="margin-left: 50px; margin-right: 50px; margin-top: 30px; margin-bottom: 50px">Elstreet Avenue is one of the oldest streets in the city, and is well known for its rows of similar looking apartments that run up and down both sides of the street. The avenue was quickly built as housing for the large growing population of villagers. Each building, while similar, tried to be unique by being constructed out of different materials from around the world, and by April of 2016 the avenue was complete with very little changes since.<br><br>
+  The earliest known footage of the world was a short recording looking down Elstree Avenue. The video captures the Avenue's iconic red stone street lighting and the villagers awaking from their house’s. At the end of the Avenue next to the modern day factory used to be the location of the first ever Elstree Flag. This flag was later moved to its current location on top of a mountain across the Elstree river looking over the whole city.<br><br>
+</p>
+
+<div id="Factory_Area"></div>
+<div align="center">
+  <div class="imgeDescription">Factory Area 2019</div>
+  <img id="img" src="../history/Elstreet/Minecraft 2019-08-21 09-33-29.png" style="width:600px">
+  <div class="imgeDescriptionLink" style="width: 588px">Full Image:&nbsp;
+    <a href="../history/Elstreet/Minecraft 2019-08-21 09-33-29.png">Clean</a></div>
+</div>
+
+<!--Factory Area-->
+<p id="minecraft" style="margin-left: 50px; margin-right: 50px; margin-top: 50px; margin-bottom: 0px; text-decoration: underline;">Factory Area</p>
+
+<p id="minecraft" style="margin-left: 50px; margin-right: 50px; margin-top: 30px; margin-bottom: 50px">The current Elstree City Factory has been a significant area for people to quickly harvest food and collect resources for building or crafting. The area has gone through many iterations over the years and is still the largest factory on the server.<br><br>
+  The area was initially used as a large pumpkin, Melon, and wheat farm during 2016. By early 2017 with the arrival of new players on the server, the area was expanded and a building was constructed to house more farms for different foods and materials. Not long after another factory building was built right nextdoor which was used for duplicating times and mining cobblestone. The land behind both buildings was cleared out and flattened for the use of a tree farm.<br><br>
+  Also in 2017, there was an underground rail tunnel which allowed for the transportation of goods from the factory to the newly constructed General Store for the player Streetpro3, this tunnel was only temporarily used and is now abandoned and unusable. Since 2017, the factory buildings have gone through several iterations with the last major redesign completed in late 2021.<br><br>
+</p>
+
+<div id="2017_Development"></div>
+<div align="center">
+  <div class="imgeDescription">General Store 2017</div>
+  <img id="img" src="../history/Elstreet/13.png" style="width:600px">
+  <div class="imgeDescriptionLink" style="width: 588px">Full Image:&nbsp;
+    <a href="../history/Elstreet/13.png">Clean</a></div>
+</div>
+
+<!--2017 Development-->
+<p id="minecraft" style="margin-left: 50px; margin-right: 50px; margin-top: 50px; margin-bottom: 0px; text-decoration: underline;">2017 Development</p>
+
+<p id="minecraft" style="margin-left: 50px; margin-right: 50px; margin-top: 30px; margin-bottom: 50px">
+  2017 was a significant year for both the State and the rest of the server, there were tons of activities being done and new people were joining like Streetpro3, Deadshot, Lucas MD12, and King of Celtics.
+  <br><br>
+  During April, Streetpro3 constructed his first building on the server which was his General Store. The store was not only used as a place to buy items but it also contained several stories of approments rooms for people to live. The building was initially constructed out of stone brick and oak wood but in November of 2021 the whole building was given a major redesign.
+  <br><br>
+  In May of 2017, The Bandit714 and Deadshot would work together to create what was at the time the tallest skyscraper in the City, this building is now known as X tower because of the X shape frames of the building. In June of 2017, The Bandit would start a major flattening project of the mountains located on the eastern side of the city, this allowed the city to double in size and allowed the development of new skyscrapers like The Bandit's recreation of the Transamerica Pyramid. Streetpro3 would also build in this newly flatten land, starting his tallest building to date. Currently the building has no official name but when it was completed in 2018 it became the tallest building in the city. The Bandit would jokingly call the skyscraper the "Kremlin", which is  why in a lot of pictures of the building you can see a hammer and sickle on it.
+  <br><br>
+  By July of 2017 activity in the world had dramatically slowed down and everyone had lost interest in playing. Sadly both Deadshot and Lucas MD12 would never join the world again but they're houses located just outside of the city along Elstreet Road still exist.
+  <br><br>
+</p>
+
+<div id="2018_to_2019_Expansion"></div>
+<div align="center">
+  <div class="imgeDescription">Elstreet City 2019</div>
+  <img id="img" src="../history/Elstreet/11-15-2019_7-32-27_PM-njtzsqpl.png" style="width:600px">
+  <div class="imgeDescriptionLink" style="width: 588px">Full Image:&nbsp;
+    <a href="../history/Elstreet/11-15-2019_7-32-27_PM-njtzsqpl.png">Clean</a></div>
+</div>
+
+<!--2018 - 2019 Expansion-->
+<p id="minecraft" style="margin-left: 50px; margin-right: 50px; margin-top: 50px; margin-bottom: 0px; text-decoration: underline;">2018 - 2019 Expansion</p>
+
+<div id="Duke_Theater_Area"></div>
+<div align="center">
+  <div class="imgeDescription">Duke Theater 2022</div>
+  <img id="img" src="../history/Elstreet/Minecraft 6_8_2022 1_17_45 PM.png" style="width:600px">
+  <div class="imgeDescriptionLink" style="width: 588px">Full Image:&nbsp;
+    <a href="../history/Elstreet/Minecraft 6_8_2022 1_17_45 PM.png">Clean</a></div>
+</div>
+
+<!--Duke Theater Area-->
+<p id="minecraft" style="margin-left: 50px; margin-right: 50px; margin-top: 50px; margin-bottom: 0px; text-decoration: underline;">Duke Theater Area</p>
+
+<div id="Subway_System"></div>
+<div align="center">
+  <div class="imgeDescription">Elstreet Train Station 2022</div>
+  <img id="img" src="../history/Elstreet/Minecraft 7_6_2022 11_21_42 AM.png" style="width:600px">
+  <div class="imgeDescriptionLink" style="width: 588px">Full Image:&nbsp;
+    <a href="../history/Elstreet/Minecraft 7_6_2022 11_21_42 AM.png">Clean</a></div>
+</div>
+
+<!--Subway System-->
+<p id="minecraft" style="margin-left: 50px; margin-right: 50px; margin-top: 50px; margin-bottom: 0px; text-decoration: underline;">Subway System</p>
+
+<br>
+
+  <!--New Hope-->
+  <div id="New_Hope"></div>
+  <hr id="line1">
+  <h3 align="center" style="text-decoration: underline;">New Hope</h3><br><br>
+  <br>
+
+    <!--Kingston and Reaper-->
+    <div id="Kingston_and_Reaper"></div>
+    <hr id="line1">
+    <h3 align="center" style="text-decoration: underline;">Kingston and Reaper</h3><br><br>
+    <br>
+</main>
+<div>
+
+
+  <footer>This site will be in consent development as items are added and changed.<br>
+    The production of this site is done by the Elstreet Federal Government which is also the owner of the site and its contents.<br>
+    Credit to GitHub for hosting the site.<br><br>
+    Website Version: 1.0 July 1, 2022
+  </footer>
+
+
+</div>
+</body>
+</html>

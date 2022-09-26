@@ -1,0 +1,135 @@
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="css/elstreet.css"/>
+<head>
+<title>Elstreet Vote Page</title>
+<link rel="icon" type="image/x-icon" href="assest/favicon.ico">
+<meta charset="utf-8">
+</head>
+<body>
+
+<div id="pagesize">
+
+  <header>
+  </header>
+  <!--Navigation Bar-->
+  <nav style="padding: 2px;">
+    <table style="border-width: 0px; width: 100%;">
+      <tr>
+        <th style="border-width: 0px; font-weight: normal; text-align: left; text-decoration: none; width: 120px; color: white;">
+            Elstreet<br>Communication
+        </th>
+        <th style="border-width: 0px; font-weight: normal; text-align: left; text-decoration: none;">
+          <a href="index.html">
+            <img src="assest/homeicon.png" alt="Home Page Link" style="width:17px;height:17px;">
+            Home
+          </a>
+          &nbsp;&nbsp;
+          <a href="news.html">
+            <img src="assest/newsicon.png" alt="News Page Link" style="width:17px;height:17px;">
+            News
+          </a>
+          &nbsp;&nbsp;
+          <a href="government.html">
+            <img src="assest/governmenticon.png" alt="Government Page Link" style="width:17px;height:17px;">
+            Government
+          </a>
+          &nbsp;&nbsp;
+          <a href="documents.html">
+            <img src="assest/documentsicon.png" alt="Documents Page Link" style="width:18px;height:15px;">
+            Documents
+          </a>
+          &nbsp;&nbsp;
+          <a href="calculator.html">
+            <img src="assest/calculatoricon.png" alt="Calculator Page Link" style="width:14px;height:17px;">
+            Calculator
+          </a>
+        </th>
+      </tr>
+    </table>
+  </nav>
+
+<div>
+<main>
+  <br>
+
+  <div align="center">
+    <form class="center" id="vote" method="POST" name="google-sheet">
+      <h2 align=center style="margin-bottom: 5px;">Voting Ballot</h2>
+      <p style="margin-top: 0px;">July 2525 Presidential Elections</p>
+      <hr id="line2">
+
+      <p style="font-size: 12pt; margin-bottom: 0px;">Identification</p>
+      <p style="font-size: 10pt; margin-bottom: 20px;">Enter Your ID Number and Gamertag</p>
+      <div>
+
+        <table align="center" style="border-width: 0px;">
+          <tr>
+            <th style="border-width: 0px; font-weight: normal; text-decoration: none;">
+              <label for="ID"></label> 
+              ID Number: <input name="ID" type="text" required>
+            </th>
+            <th style="border-width: 0px; font-weight: normal; text-decoration: none;">
+              <label for="Gamertage"></label>
+              Gamertage: <input name="Gamertage" type="text" required>
+            </th>
+          </tr>
+        </table>
+      </div>
+      <hr id="line2">
+      
+      <p style="font-size: 12pt; margin-bottom: 0px;">Officies</p>
+      <p style="font-size: 10pt; margin-bottom: 20px; margin-top: 5px;">Select Candidate For Each Office</p>
+      <div>
+          President: 
+          <select id="fState" name="Candidate" style="width: 140px;" required>
+            <option value="" disabled selected>Candidates</option>
+            <option value="Bob">Bob</option>
+            <option value="Bob">Bill</option>  
+          </select>
+      </div>
+      <br><hr id="line2">
+
+      <button id="buttonLink" type="submit" name="sumbit" style="font-size: 12pt;">Submit</button>
+      &nbsp;&nbsp;&nbsp;
+      <a id="buttonLink" href="index.html">Return</a>
+  
+    </form>
+  </div>
+
+  <script type="text/javascript">
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwkFB7GiRnOL2BWrNDHClAckfKud5PZqd-QHciq5uVV8Ubijz0Jkrea89S1vR1Hm4Q7/exec'
+    const form = document.forms['google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(respones => alert("Your Vote Has Been Submitted"))
+      .catch(error => console.error('Error', error.message))
+    })
+  </script>
+  
+  <h2 align="center" style="font-size: 18pt; font-weight: normal;">Instructions</h2>
+
+  <p id="minecraft" style="margin-left: 50px; margin-right: 50px; margin-top: 30px; margin-bottom: 50px">
+    In order to submit your ballot, all fields must be completed.
+    <br><br>
+    At any point you can click the Return button to go back to the Home Page of the site.
+    <br><br>
+    After clicking the submit button, wait a few seconds and a message will appear saying "Your Vote Has Been Submitted". Once Submitted you can click the Return button to go back to the Home Page.
+    <br><br>
+    This section of the website is currently under development, and is therefore not an official voting ballot.
+  </p>
+</main>
+<div>
+
+
+  <footer>This site will be in consent development as items are added and changed.<br>
+    The production of this site is done by the Elstreet Federal Government which is also the owner of the site and its contents.<br>
+    Credit to GitHub for hosting the site.<br><br>
+    Website Version: 2.0 September 1, 2022
+  </footer>
+
+
+</div>
+</body>
+</html>
