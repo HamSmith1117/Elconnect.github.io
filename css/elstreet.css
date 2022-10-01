@@ -1,0 +1,653 @@
+@font-face {
+  src: url(../font/Minecraft-Regular.otf);
+  font-family: Minecraft;
+}
+
+/*Phone Size*/ 
+@media only screen and (max-width: 800px) {
+  #wrapper {
+    display: grid;
+    grid-template-columns: 
+    [start] 1fr 
+    1fr 1fr 1fr 1fr 1fr
+    [end];
+    
+    grid-template-rows: 
+    [navbar] 65px
+    [main] 5fr
+    [footer] 135px;
+    gap: 0px;
+    margin: 0px;
+  }
+  
+  header {
+    grid-column: 1 / 7;
+    grid-row: 1;
+  
+    background-color: #3366CC;
+  
+    font-family: "Minecraft";
+    font-size: 12pt;
+    color: white;
+    padding: 5px;
+  }
+  
+  #desktheader {
+    display: none;
+  }
+
+  /*Navigation Dropdown*/
+  .dropbtn {
+    background-color: #3366CC;
+    color: white;
+    font-family: Minecraft;
+    padding: 15px;
+    font-size: 14pt;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    width: 100%;
+    display: none;
+    position:relative;
+    background-color: #3366CC;
+    border: gray solid 3px;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 14pt;
+    display: block;
+  }
+
+  .show {display: block;}
+  
+  nav {
+    display: none;
+  }
+
+
+  main {
+    grid-column: start / end;
+    grid-row: main;
+  
+    background-color: white;
+    border-top: 4px solid gray;
+    border-bottom: 4px solid gray;
+  
+    font-family: "Minecraft";
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  #line1{
+    border-style: solid;
+    border-color: #00bf4c;
+  }
+
+  h2 {
+    color: #00bf4c;
+    font-weight: normal;
+  }
+
+  h3{
+    color: #3366CC;
+    font-family:Minecraft;
+    font-weight: bold;
+    margin: 5px;
+  }
+
+  .pagetitleinfo {
+    display: none;
+  }
+
+  .textsize1 {
+    font-family: Minecraft;
+    font-size: 20;
+  }
+
+  .textsize2 {
+    font-family: Minecraft;
+    font-size: 18;
+  }
+
+  .textsize3 {
+    font-family: Minecraft;
+    font-size: 14;
+  }
+
+  .textsize4 {
+    font-family: Minecraft;
+    font-size: 12;
+  }
+
+  #maintext {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #articeltext {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #buttonLink {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    font-family: Minecraft;
+    color: #FFFFFF;
+    background-color:#3366CC;
+    padding: 10;
+    border-top: 1.5px solid #3366CC;
+    border-left: 1.5px solid #3366CC;
+    border-right: 3px solid #528afa;
+    border-bottom: 3px solid #528afa;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  #buttonLink:hover {
+    background-color: #00bf4c;
+    color: white;
+    border-top-color: #00bf4c;
+    border-left-color: #00bf4c;
+    border-right-color: #26f076;
+    border-bottom-color: #26f076;
+  }
+  
+  #buttonLink:active {
+    background-color: #dbdbdb;
+    color: #00bf4c;
+    border-top-color: #dbdbdb;
+    border-left-color: #dbdbdb;
+    border-right-color: #adadad;
+    border-bottom-color: #adadad;
+  }
+
+  #lgImg {
+    border-color: #00bf4c;
+    border-style: solid;
+    border-width: 2px;
+    width: 95%;
+  }
+
+  #lgImgTitle {
+    font-family: "Minecraft";
+    font-size: 14pt;
+    color: white;
+    background-color: #00bf4c;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  #lgImgDescription {
+    font-family: "Minecraft";
+    font-size: 10pt;
+    color: white;
+    background-color: #00bf4c;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    padding-bottom: 1px;
+    border-color: #00bf4c;
+    border-style: solid;
+    border-width: 2px;
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+
+  /*--News Page Phone--*/
+  #ElstreetJournal {
+    font-family: Minecraft;
+    color: #00bf4c;
+    font-size: 20pt;
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px #3366CC;
+  }
+
+  #flaghead {
+    display: none;
+  }
+
+  #newTH {
+    display: none;
+  }
+
+  #issue {
+    display: none;
+  }
+
+  #displayDateTime {
+    font-family: Minecraft;
+    font-size: 14pt;
+    color: white;
+  }
+
+  #publicationlocation {
+    display: none;
+  }
+
+  #topictitle {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #3366CC;
+  }
+
+  /*Government Page*/
+  .electiontable {
+    display: none;
+  }
+
+  #ballot {
+    width: 90%;
+    background-color:#eeeeee;
+    border-color: #eeeeee;
+    border-right-color: #dbdbdb;
+    border-bottom-color: #dbdbdb;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    font-family:Minecraft;
+    text-align:center;
+  }
+
+  /*Maps Page*/
+  #Xcord {
+    font-family: Minecraft;
+    font-size: 12px;
+    color: gray;
+  
+    width: 70px;
+    padding: 8px 4px;
+    border-left: 1.5px solid #3366CC;
+    border-top: 1.5px solid #3366CC;
+    border-bottom: 3px solid #3366CC;
+    border-right: 3px solid #3366CC;
+    border-radius: 3px;
+  }
+
+  #Zcord {
+    font-family: Minecraft;
+    font-size: 12px;
+    color: gray;
+
+    width: 70px;
+    padding: 8px 4px;
+    border-left: 1.5px solid #3366CC;
+    border-top: 1.5px solid #3366CC;
+    border-bottom: 3px solid #3366CC;
+    border-right: 3px solid #3366CC;
+    border-radius: 3px;
+  }
+
+  #findmapdes {
+    display: none;
+  }
+
+  footer {
+    grid-column:  start / end;
+    grid-row: footer;
+  
+    border: 4px solid #00bf4c;
+  
+    font-family: "Minecraft";
+    color: gray;
+    font-size:.80em;
+    font-style:italic;
+    text-align:center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+/*Phone Size*/ 
+
+
+
+/*--------------------------------------------------------------------*/ 
+/*--------------------------------------------------------------------*/ 
+
+
+
+/*Computer Size*/ 
+@media only screen and (min-width: 800px) {
+
+  #wrapper {
+    display: grid;
+    grid-template-columns: 
+    [start] 1fr 
+    1fr 1fr 1fr 1fr 1fr
+    [end];
+    
+    grid-template-rows: 
+    [navbar] 60px
+    [main] 5fr 
+    [footer] 100px;
+    gap: 0px;
+  }
+  
+  
+  
+  header {
+    grid-column: 1;
+    grid-row: 1;
+  
+    background-color: #3366CC;
+  
+    font-family: "Minecraft";
+    font-size: 12pt;
+    color: white;
+    padding: 10px;
+  }
+  
+  #mobileheader{
+    display: none;
+  }
+
+  #myDropdown {
+    display: none;
+  }
+  
+  nav {
+    grid-column: 2 / end;
+    grid-row: 1;
+  
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  
+    background-color: #3366CC;
+  
+    font-family: "Minecraft";
+    font-size: 12pt;
+    color: white;
+  }
+  nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 12pt;
+  }
+  nav a:active{
+    text-decoration: none;
+    color: #000770;
+  }
+  
+  main {
+    grid-column: start / end;
+  
+    background-color: white;
+    border-top: 4px solid gray;
+    border-bottom: 4px solid gray;
+  
+    font-family: "Minecraft";
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  #line1{
+    border-style: solid;
+    border-color: #00bf4c;
+  }
+
+  h2 {
+    color: #00bf4c;
+    font-weight: normal;
+  }
+
+  h3{
+    color: #3366CC;
+    font-family:Minecraft;
+    font-weight: bold;
+    margin: 5px;
+  }
+
+  .pagetitleinfo {
+    font-family: Minecraft;
+    color: gray;
+    font-size: 18;
+  }
+
+  .textsize1 {
+    font-family: Minecraft;
+    font-size: 18;
+  }
+
+  .textsize2 {
+    font-family: Minecraft;
+    font-size: 16;
+  }
+
+  .textsize3 {
+    font-family: Minecraft;
+    font-size: 12;
+  }
+
+  .textsize4 {
+    font-family: Minecraft;
+    font-size: 8;
+  }
+
+  #maintext {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  #articeltext {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  #buttonLink {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    font-family: Minecraft;
+    color: #FFFFFF;
+    background-color:#3366CC;
+    padding: 10;
+    border-top: 1.5px solid #3366CC;
+    border-left: 1.5px solid #3366CC;
+    border-right: 3px solid #528afa;
+    border-bottom: 3px solid #528afa;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  #buttonLink:hover {
+    background-color: #00bf4c;
+    color: white;
+    border-top-color: #00bf4c;
+    border-left-color: #00bf4c;
+    border-right-color: #26f076;
+    border-bottom-color: #26f076;
+  }
+  
+  #buttonLink:active {
+    background-color: #dbdbdb;
+    color: #00bf4c;
+    border-top-color: #dbdbdb;
+    border-left-color: #dbdbdb;
+    border-right-color: #adadad;
+    border-bottom-color: #adadad;
+  }
+
+  #lgImg {
+    border-color: #00bf4c;
+    border-style: solid;
+    border-width: 4px;
+    width: 60%;
+  }
+
+  #lgImgTitle {
+    font-family: "Minecraft";
+    font-size: 12pt;
+    color: white;
+    background-color: #00bf4c;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  #lgImgDescription {
+    font-family: "Minecraft";
+    font-size: 10pt;
+    color: white;
+    background-color: #00bf4c;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    padding-bottom: 1px;
+    border-color: #00bf4c;
+    border-style: solid;
+    border-width: 4px;
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+
+  /*--News Page Computer--*/
+  #ElstreetJournal {
+    font-family: Minecraft;
+    color: #00bf4c;
+    font-size: 30pt;
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px #3366CC;
+  }
+  #issue {
+      font-family: Minecraft;
+      font-size: 10pt;
+      color: white;
+      font-weight: normal;
+    }
+    #displayDateTime {
+      font-family: Minecraft;
+      font-size: 14pt;
+      color: white;
+    }
+    #publicationlocation {
+      font-family: Minecraft;
+      font-size: 10pt;
+      color: white;
+      font-weight: normal;
+    }
+
+    #topictitle {
+      font-size: 14pt;
+      font-weight: bold;
+      color: #3366CC;
+    }
+
+    /*Government Page*/
+    #electionphone {
+      display: none;
+    }
+
+    .electiontable{
+      font-family: Minecraft;
+      padding: 10px;
+      width: 70%;
+      border-left: solid 2px gray;
+      border-right: solid 2px gray;
+      color: gray;
+    }
+
+    #ballot {
+      width: 70%;
+      background-color:#eeeeee;
+      border-color: #eeeeee;
+      border-right-color: #dbdbdb;
+      border-bottom-color: #dbdbdb;
+      border-width: 5px;
+      border-style: solid;
+      border-radius: 5px;
+      font-family:Minecraft;
+      text-align:center;
+    }
+
+   /*Maps Page*/
+    #Xcord {
+      font-family: Minecraft;
+      font-size: 14px;
+      color: gray;
+
+      width: 115px;
+      padding: 8px 16px;
+      margin: 8px 0;
+      border-left: 1.5px solid #3366CC;
+      border-top: 1.5px solid #3366CC;
+      border-bottom: 3px solid #3366CC;
+      border-right: 3px solid #3366CC;
+      border-radius: 3px;
+    }
+    #Zcord {
+      font-family: Minecraft;
+      font-size: 14px;
+      color: gray;
+
+      width: 115px;
+      padding: 8px 16px;
+      margin: 8px 0;
+      border-left: 1.5px solid #3366CC;
+      border-top: 1.5px solid #3366CC;
+      border-bottom: 3px solid #3366CC;
+      border-right: 3px solid #3366CC;
+      border-radius: 3px;
+    }
+  
+  footer {
+    grid-column:  start / end;
+    grid-row: 3;
+  
+    border: 4px solid #00bf4c;
+  
+    font-family: "Minecraft";
+    color: gray;
+    font-size:.70em;
+    font-style:italic;
+    text-align:center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+}
