@@ -1,0 +1,250 @@
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="../css/elstreet.css"/>
+<head>
+<title>Elstreet Maps Page</title>
+<link rel="icon" type="image/x-icon" href="../assest/favicon.ico">
+<meta charset="utf-8" name="viewport" content="width=device-width">
+</head>
+<body>
+
+<div id="wrapper">
+
+  <header>
+    <!--Header-->
+    <div id="desktheader">Elstreet<br>Communication</div>
+    <div class="dropdown">
+      <div id="mobileheader"align="center"><button onclick="myFunction()" class="dropbtn">Elstreet Communication</button></div>
+
+      <!--Navigation Bar for Mobile-->
+      <div align="center" id="myDropdown" class="dropdown-content">
+        <a href="../../index.html">
+          <img src="../assest/homeicon.png" alt="Home Page Link" style="width:17px;height:17px;">
+          Home
+        </a>
+        <a href="../news.html">
+          <img src="../assest/newsicon.png" alt="News Page Link" style="width:17px;height:17px;">
+          News
+        </a>
+        <a href="../government.html">
+          <img src="../assest/governmenticon.png" alt="Government Page Link" style="width:17px;height:17px;">
+          Government
+        </a>
+        <a href="../documents.html">
+          <img src="../assest/documentsicon.png" alt="Documents Page Link" style="width:18px;height:15px;">
+          Documents
+        </a>
+        <a href="../tools.html">
+          <img src="../assest/tools.png" alt="Tools Page Link" style="width:14px;height:17px;">
+          Tools
+        </a>
+      </div>
+    </div>
+
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+  </header>
+
+  <!--Navigation Bar for Desktop-->
+  <nav>
+    <a href="../../index.html">
+      <img src="../assest/homeicon.png" alt="Home Page Link" style="width:17px;height:17px;">
+      Home
+    </a>
+    &nbsp;&nbsp;
+    <a href="../news.html">
+      <img src="../assest/newsicon.png" alt="News Page Link" style="width:17px;height:17px;">
+      News
+    </a>
+    &nbsp;&nbsp;
+    <a href="../government.html">
+      <img src="../assest/governmenticon.png" alt="Government Page Link" style="width:17px;height:17px;">
+      Government
+    </a>
+    &nbsp;&nbsp;
+    <a href="../documents.html">
+      <img src="../assest/documentsicon.png" alt="Documents Page Link" style="width:18px;height:15px;">
+      Documents
+    </a>
+    &nbsp;&nbsp;
+    <a href="../tools.html">
+      <img src="../assest/tools.png" alt="Tools Page Link" style="width:14px;height:17px;">
+      Tools
+    </a>
+  </nav>
+
+  <main>
+      <!--Main Title-->
+      <h2 align="center">World Maps</h2>
+      <br>
+
+      <!--All The Maps Slide-->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption -->
+        <!-- Map 1 -->
+        <div class="mySlides">
+            <table class="Imgtable" align="center">
+                <tr>
+                    <th class="ImgSlideText1" style="width:10%; color: white; text-align: left; font-weight: normal;">1 / 3</th>
+                    <th class="ImgSlideText2" style="width: 40%; color: white; font-weight: normal; text-align: left;">World Map 1</th>
+                    <th class="ImgSlideText1" style="width: 50%; color: white; text-align: right; font-weight: normal;">
+                        Full Image :&nbsp;&nbsp;
+                        <a style="font-weight: normal;" href="https://drive.google.com/file/d/1-9uipB23YXqs-tL1_fn0DY4mdIguLJBn/view?usp=share_link">Clean</a>&nbsp;
+                        <a style="font-weight: normal;" href="https://drive.google.com/file/d/1uotBtWkA1KW2w7fh2uxqnoIB3enZPjeL/view?usp=share_link">Roads</a>
+                    </th>
+                </tr>
+            </table>
+                <img src="maps/Map Preview 1.png" style="width:100%">
+        </div>
+        <!-- Map 2 -->
+        <div class="mySlides">
+            <table class="Imgtable" align="center">
+                <tr>
+                  <th class="ImgSlideText1" style="width:10%; color: white; text-align: left; font-weight: normal;">2 / 3</th>
+                  <th class="ImgSlideText2" style="width: 40%; color: white; font-weight: normal; text-align: left;">World Map 2</th>
+                  <th class="ImgSlideText1" style="width: 50%; color: white; text-align: right; font-weight: normal;">
+                      Full Image :&nbsp;&nbsp;
+                      <a style="font-weight: normal;" href="https://drive.google.com/file/d/1nhbG1_Ux4YF7GowN8fWpxLhuvdwQ_Co6/view?usp=share_link">Clean</a>&nbsp;
+                      <a style="font-weight: normal;" href="https://drive.google.com/file/d/1mZDBUAcDxDWomq8y6Piw5tURJyPCTtIp/view?usp=share_link">Roads</a>
+                  </th>
+              </tr>
+            </table>
+            <img src="maps/Map Preview 2.png" style="width: 100%;">
+        </div>
+        <!-- Map 3 -->
+        <div class="mySlides">
+            <table class="Imgtable" align="center">
+                <tr>
+                  <th class="ImgSlideText1" style="width:10%; color: white; text-align: left; font-weight: normal;">3 / 3</th>
+                  <th class="ImgSlideText2" style="width: 40%; color: white; font-weight: normal; text-align: left;">World Map 3</th>
+                  <th class="ImgSlideText1" style="width: 50%; color: white; text-align: right; font-weight: normal;">
+                      Full Image :&nbsp;&nbsp;
+                      <a style="font-weight: normal;" href="https://drive.google.com/file/d/1xJdMjX_iwXbcCevabBDzvm6EFw_vyxJy/view?usp=share_link">Clean</a>&nbsp;
+                      <a style="font-weight: normal;" href="https://drive.google.com/file/d/1aW4v8RVxZl5qyZcro4t0ElggyxgPJvLq/view?usp=share_link">Roads</a>
+                  </th>
+              </tr>
+            </table>
+            <img src="maps/Map Preview 3.png" style="width: 100%;">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <div class="btn-group" style="width:100%">
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+    </div>
+    <br>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block"
+        }
+    </script>
+
+    <br>
+
+      <!--Locate Map-->
+      <form class=center style="font-size: 12pt" action="/action page. php" id="defaultForm">
+        <p align="left" style="margin: 10px; color: #3366CC;" class="textsize1">Locate Map</p>
+        <p align=left style="margin: 10px; color: gray;" class="textsize2">Enter coods to find map</p>
+        <hr style="margin-left: 10px; margin-right: 10px; border: 1px solid gray;">
+
+        X : <input type="text" id="Xcord">&nbsp;&nbsp;
+        Z : <input type="text" id="Zcord">&nbsp;
+
+        <input id="buttonlink" style="font-size: 10pt" type="button" onclick="LocateMapFunction()" value="Find">
+
+        <hr style="margin-left: 10px; margin-right: 10px; border: 1px solid gray;">
+
+        <p align="left" style="margin: 10px; color: #3366CC;" class="textsize1">Results</p>
+
+        <p id="MapName" class="textsize2" style="color: gray; margin-top: 10px;">&nbsp;</p>
+      </form>
+      
+      <script>
+        function LocateMapFunction()
+        {
+          var x = document.getElementById ("Xcord").value;
+          var z = document.getElementById ("Zcord").value;
+          
+          document.getElementById("MapName").innerHTML = "A Map of X:" + x + ", Z:" + z + " is not yet available";
+
+          //Map 1
+          if ((x > -3100 && x < 2560)  && (z > -2560 && z < 2560))
+          {
+            document.getElementById("MapName").innerHTML = "Coords are in World Map 1";
+          }
+
+          //Map 2
+          if ((x > 700 && x < 5130)  && (z > -5300 && z < -2550))
+          {
+            document.getElementById("MapName").innerHTML = "Coords are in Map 2";
+          }
+
+          //Map 3
+          if ((x > -7390 && x < -1100)  && (z > 1800 && z < 4330))
+          {
+            document.getElementById("MapName").innerHTML = "Coords are in Map 3";
+          }
+        }
+      </script>
+
+      <div align="center">
+        <a id="buttonLink" href="../../Elstreet Map March 2023/unmined.index.html" style="width: 200px;" align="center">
+          World Map Site
+        </a>
+      </div>
+
+      <br><br>
+
+  </main>
+
+  <footer>
+    This site will be in consent development as items are added and changed.<br>
+    The production of this site is done in part by the Elstreet Federal Government<br>
+    Credit to GitHub for hosting the site, and uNmINeD for mapping tools and resources<br><br>
+    Website Version: 4.0 May 1, 2023
+  </footer>
+
+</div>
+</body>
+</html>

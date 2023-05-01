@@ -1,0 +1,269 @@
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="css/elstreet.css"/>
+<head>
+<title>Elstreet Calculator Page</title>
+<link rel="icon" type="image/x-icon" href="assest/favicon.ico">
+<meta charset="utf-8">
+</head>
+<body>
+<div id="pagesize">
+
+<header>
+</header>
+
+<!--Navigation Bar-->
+<nav style="padding: 2px;">
+  <table style="border-width: 0px; width: 100%;">
+    <tr>
+      <th style="border-width: 0px; font-weight: normal; text-align: left; text-decoration: none; width: 120px; color: white;">
+          Elstreet<br>Communication
+      </th>
+      <th style="border-width: 0px; font-weight: normal; text-align: left; text-decoration: none;">
+        <a href="index.html">
+          <img src="assest/homeicon.png" alt="Home Page Link" style="width:17px;height:17px;">
+          Home
+        </a>
+        &nbsp;&nbsp;
+        <a href="news.html">
+          <img src="assest/newsicon.png" alt="News Page Link" style="width:17px;height:17px;">
+          News
+        </a>
+        &nbsp;&nbsp;
+        <a href="government.html">
+          <img src="assest/governmenticon.png" alt="Government Page Link" style="width:17px;height:17px;">
+          Government
+        </a>
+        &nbsp;&nbsp;
+        <a href="documents.html">
+          <img src="assest/documentsicon.png" alt="Documents Page Link" style="width:18px;height:15px;">
+          Documents
+        </a>
+        &nbsp;&nbsp;
+        <a href="calculator.html">
+          <img src="assest/calculatoricon.png" alt="Calculator Page Link" style="width:14px;height:17px;">
+          Calculator
+        </a>
+      </th>
+    </tr>
+  </table>
+</nav>
+
+<div>
+    <main>
+      <br><br>
+      <p align=center style="font-size: 14pt; margin-top: 0px; margin-bottom: 10px;" id="minecraft">Time</p>
+      <br>
+
+      <h3 align="center">Stopwatch</h3>
+      <p align=center style="font-size: 12pt" id="minecraft">Track the passing of real and minecraft time</p><br>
+
+      <table align="center" style="border-width: 0px;">
+        <tr>
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;" id="hour">
+            00
+          </th>
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;">
+            :
+          </th>
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;" id="minute">
+            00
+          </th>
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;">
+            :
+          </th>
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;" id="second">
+            00
+          </th>
+        </tr>
+        <tr>
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;">
+            Hour
+          </th>
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;">
+            
+          </th>
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;">
+            Minute
+          </th>
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;">
+            
+          </th>
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;">
+            Second
+          </th>
+        </tr>
+      
+        <tr style="border-width: 0px;">
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;" id="MineDay">
+            00
+          </th>
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;">
+            :
+          </th>
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;" id="MineHour">
+            00
+          </th>
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;">
+            :
+          </th>
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;" id="MineTick">
+            00
+          </th>
+        </tr>
+        <tr>
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;">
+            Day
+          </th>
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;">
+            
+          </th>
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;">
+            Hour
+          </th>
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;">
+            
+          </th>
+          <th style="border-width: 0px; font-weight: normal; text-decoration: none;">
+            Tick
+          </th>
+        </tr>
+      </table>
+      
+      
+      <button onclick="startTimer()" id="buttonLink">Start</button></li>
+      <button onclick="stopTimer()" id="buttonLink">Stop</button></li>
+      <button onclick="resetTimer()" id="buttonLink">Reset</button></li>
+      
+      <script>
+        const timer = document.getElementById('stopwatch');
+        const Mtime = document.getElementById('minecrfatTime');
+        var hr = 0;
+        var min = 0;
+        var sec = 0;
+      
+        var tick = 0;
+        var Mhr = 0;
+        var Mday = 0;
+        var stoptime = true;
+      
+        function startTimer()
+        {
+          if (stoptime == true)
+          {
+            stoptime = false;
+            timerCycle();
+          }
+        }
+      
+        function stopTimer() 
+        {
+          if (stoptime == false) 
+          {
+            stoptime = true;
+          }
+        }
+      
+        function timerCycle() 
+        {
+          if (stoptime == false) 
+          {
+            sec = parseInt(sec);
+            min = parseInt(min);
+            hr = parseInt(hr);
+      
+            tick = parseInt(tick);
+            Mhr = parseInt(Mhr);
+            Mday = parseInt(Mday);
+      
+            sec = sec + 1;
+            tick = tick + 20;
+            
+            if (sec == 60) 
+            {
+              min = min + 1;
+              sec = 0;
+            }
+            if (min == 60) 
+            {
+              hr = hr + 1;
+              min = 0;
+              sec = 0;
+            }
+      
+            if (tick == 1000) 
+            {
+              Mhr = Mhr + 1;
+              tick = 0;
+            }
+            if (Mhr == 24) 
+            {
+              Mday = Mday + 1;
+              Mhr = 0;
+              tick = 0;
+            }
+      
+            if (sec < 10 || sec == 0) 
+            {
+              sec = '0' + sec;
+            }
+            if (min < 10 || min == 0) 
+            {
+              min = '0' + min;
+            }
+            if (hr < 10 || hr == 0) 
+            {
+              hr = '0' + hr;
+            }
+      
+            if (tick < 10 || tick == 0) 
+            {
+              tick = '0' + tick;
+            }
+            if (Mhr < 10 || Mhr == 0) 
+            {
+              Mhr = '0' + Mhr;
+            }
+            if (Mday < 10 || Mday == 0) 
+            {
+              Mday = '0' + Mday;
+            }
+            document.getElementById("hour").innerHTML = hr;
+            document.getElementById("minute").innerHTML = min;
+            document.getElementById("second").innerHTML = sec;
+      
+            document.getElementById("MineDay").innerHTML = Mday;
+            document.getElementById("MineHour").innerHTML = Mhr;
+            document.getElementById("MineTick").innerHTML = tick;
+      
+            setTimeout("timerCycle()", 1000);
+          }
+        }
+      
+        function resetTimer() 
+        {
+          document.getElementById("hour").innerHTML = "00";
+          document.getElementById("minute").innerHTML = "00";
+          document.getElementById("second").innerHTML = "00";
+      
+          document.getElementById("MineDay").innerHTML = "00";
+          document.getElementById("MineHour").innerHTML = "00";
+          document.getElementById("MineTick").innerHTML = "00";
+      
+          sec = 0;
+          min = 0;
+          hr = 0;
+      
+          tick = 0;
+          Mhr = 0;
+          Mday = 0;
+        }
+      </script>
+
+    </main>
+</div>
+
+<footer>This site will be in consent development as items are added and changed.<br>
+    The production of this site is done by the Elstreet Federal Government which is also the owner of the site and its contents.<br>
+    Credit to GitHub for hosting the site.<br><br>
+    Website Version: 2.0 September 1, 2022
+  </footer>
