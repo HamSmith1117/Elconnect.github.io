@@ -1,0 +1,410 @@
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="../css/elstreet.css"/>
+<head>
+<title>Elstreet Currency Page</title>
+<link rel="icon" type="image/x-icon" href="../assest/favicon.ico">
+<meta charset="utf-8" name="viewport" content="width=device-width">
+</head>
+<body>
+
+<div id="wrapper">
+
+  <header>
+    <!--Header-->
+    <div id="desktheader">Elstreet<br>Communication</div>
+    <div class="dropdown">
+      <div id="mobileheader"align="center"><button onclick="myFunction()" class="dropbtn">Elstreet Communication</button></div>
+
+      <!--Navigation Bar for Mobile-->
+      <div align="center" id="myDropdown" class="dropdown-content">
+        <a href="../../index.html">
+          <img src="../assest/homeicon.png" alt="Home Page Link" style="width:17px;height:17px;">
+          Home
+        </a>
+        <a href="../news.html">
+          <img src="../assest/newsicon.png" alt="News Page Link" style="width:17px;height:17px;">
+          News
+        </a>
+        <a href="../government.html">
+          <img src="../assest/governmenticon.png" alt="Government Page Link" style="width:17px;height:17px;">
+          Government
+        </a>
+        <a href="../documents.html">
+          <img src="../assest/documentsicon.png" alt="Documents Page Link" style="width:18px;height:15px;">
+          Documents
+        </a>
+        <a href="../tools.html">
+          <img src="../assest/tools.png" alt="Tools Page Link" style="width:14px;height:17px;">
+          Tools
+        </a>
+      </div>
+    </div>
+
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+  </header>
+
+  <!--Navigation Bar for Desktop-->
+  <nav>
+    <a href="../../index.html">
+      <img src="../assest/homeicon.png" alt="Home Page Link" style="width:17px;height:17px;">
+      Home
+    </a>
+    &nbsp;&nbsp;
+    <a href="../news.html">
+      <img src="../assest/newsicon.png" alt="News Page Link" style="width:17px;height:17px;">
+      News
+    </a>
+    &nbsp;&nbsp;
+    <a href="../government.html">
+      <img src="../assest/governmenticon.png" alt="Government Page Link" style="width:17px;height:17px;">
+      Government
+    </a>
+    &nbsp;&nbsp;
+    <a href="../documents.html">
+      <img src="../assest/documentsicon.png" alt="Documents Page Link" style="width:18px;height:15px;">
+      Documents
+    </a>
+    &nbsp;&nbsp;
+    <a href="../tools.html">
+      <img src="../assest/tools.png" alt="Tools Page Link" style="width:14px;height:17px;">
+      Tools
+    </a>
+  </nav>
+
+    <main>
+      <h2 align=center id="minecraft">Currency</h2>
+      <br>
+
+      <!--Value Cal-->
+
+      <!--Phone From-->
+      <div id="PhoneForm">
+        <form id=defaultForm class="center">
+
+          <p align="left" style="margin: 10px; color: #3366CC;" class="textsize1">Currency Value</p>
+          <p align=left style="margin: 10px; color: gray;" class="textsize2">Calculate the view of items</p>
+          <hr style="margin-left: 10px; margin-right: 10px; border: 1px solid gray;">
+          <br>
+  
+          Material:
+          <select class="defaultSelect" id="material2" name="Material" style="width: 140px;">
+            <option value="Copper">Copper</option>
+            <option value="Iron">Iron</option>
+            <option value="Gold">Gold</option>
+            <option value="Diamond">Diamond</option>
+            <option value="Emerald">Emerald</option>
+            <option value="Netherite">Netherite</option>
+          </select>
+          <br>
+          Type: <select class="defaultSelect" id="type2" name="Type" style="width: 140px;">
+            <option value="Ingot">Ingot</option>
+            <option value="Block">Block</option>
+            <option value="Nugget">Nugget</option>
+          </select>
+          <br>
+          Amount: <input class="defaultInput" type="text" id="amount2">
+  
+          <br><br>
+          <input id="buttonlink" style="font-size: 10pt" type="button" onclick="calcValue2()" value="Calculate">&nbsp;&nbsp;
+          <input id="buttonlink" style="font-size: 10pt" type="reset" onclick="valueReset2()" value="Clear">
+  
+          <br>
+          <hr style="margin-left: 10px; margin-right: 10px; border: 1px solid gray;">
+  
+          <p align="left" style="margin: 10px; color: #3366CC;" class="textsize1">Results</p>
+  
+          <br>
+          <p align=left style="margin: 10px; color: gray;" class="textsize2" id="cost2"></p>
+          <br>
+        </form>
+      </div>
+
+      <!--Computer Form-->
+      <div id="ComputerForm">
+        <form id=defaultForm class="center">
+
+          <p align="left" style="margin: 10px; color: #3366CC;" class="textsize1">Currency Value</p>
+          <p align=left style="margin: 10px; color: gray;" class="textsize2">Calculate the view of items</p>
+          <hr style="margin-left: 10px; margin-right: 10px; border: 1px solid gray;">
+          <br>
+
+          Material:
+          <select class="defaultSelect" id="material" name="Material" style="width: 140px;">
+            <option value="Copper">Copper</option>
+            <option value="Iron">Iron</option>
+            <option value="Gold">Gold</option>
+            <option value="Diamond">Diamond</option>
+            <option value="Emerald">Emerald</option>
+            <option value="Netherite">Netherite</option>
+          </select>
+          &nbsp;&nbsp;
+          Type: <select class="defaultSelect" id="type" name="Type" style="width: 140px;">
+            <option value="Ingot">Ingot</option>
+            <option value="Block">Block</option>
+            <option value="Nugget">Nugget</option>
+          </select>
+          <br>
+          Amount: <input class="defaultInput" type="text" id="amount">
+
+          <br><br>
+          <input id="buttonlink" style="font-size: 10pt" type="button" onclick="calcValue()" value="Calculate">&nbsp;&nbsp;
+          <input id="buttonlink" style="font-size: 10pt" type="reset" onclick="valueReset()" value="Clear">
+
+          <br>
+          <hr style="margin-left: 10px; margin-right: 10px; border: 1px solid gray;">
+
+          <p align="left" style="margin: 10px; color: #3366CC;" class="textsize1">Results</p>
+
+          <br>
+          <p align=left style="margin: 10px; color: gray;" class="textsize2"id="cost"></p>
+          <br>
+        </form>
+      </div>
+
+      <script>
+        function valueReset2()
+        {
+          document.getElementById("cost2").innerHTML = "";
+        }
+
+        function valueReset()
+        {
+          document.getElementById("cost").innerHTML = "";
+        }
+
+        function calcValue()
+        {
+          var m = document.getElementById ("material").value;
+          var t = document.getElementById ("type").value;
+          var a = document.getElementById ("amount").value;
+          var total;
+
+          if (a == "")
+          {
+            document.getElementById("cost").innerHTML = "Amount must be filled";
+          }
+          else
+          {
+            // Copper 
+            if (m == "Copper" && t == "Nugget")
+            {
+              total = a * 0.05;
+            }
+            if (m == "Copper" && t == "Ingot")
+            {
+              total = a * 0.50;
+            }
+            if (m == "Copper" && t == "Block")
+            {
+              total = a * 4.5;
+            }
+
+            // Iron 
+            if (m == "Iron" && t == "Nugget")
+            {
+              total = a * 0.11;
+            }
+            if (m == "Iron" && t == "Ingot")
+            {
+              total = a * 1.00;
+            }
+            if (m == "Iron" && t == "Block")
+            {
+              total = a * 9.00;
+            }
+
+            // Gold
+            if (m == "Gold" && t == "Nugget")
+            {
+              total = a * 0.55;
+            }
+            if (m == "Gold" && t == "Ingot")
+            {
+              total = a * 5.00;
+            }
+            if (m == "Gold" && t == "Block")
+            {
+              total = a * 45.00;
+            }
+
+            // Diamond
+            if (m == "Diamond" && t == "Nugget")
+            {
+              total = a * 1.11;
+            }
+            if (m == "Diamond" && t == "Ingot")
+            {
+              total = a * 10.00;
+            }
+            if (m == "Diamond" && t == "Block")
+            {
+              total = a * 90.00;
+            }
+
+            // Emerald
+            if (m == "Emerald" && t == "Nugget")
+            {
+              total = a * 2.22;
+            }
+            if (m == "Emerald" && t == "Ingot")
+            {
+              total = a * 20.00;
+            }
+            if (m == "Emerald" && t == "Block")
+            {
+              total = a * 180.00;
+            }
+
+            // Netherite
+            if (m == "Netherite" && t == "Nugget")
+            {
+              total = a * 5.55;
+            }
+            if (m == "Netherite" && t == "Ingot")
+            {
+              total = a * 50.00;
+            }
+            if (m == "Netherite" && t == "Block")
+            {
+              total = a * 450.00;
+            }
+
+            document.getElementById("cost").innerHTML = "Total: $" + total + " Elstreet Dollars";
+          }
+        }
+        
+        function calcValue2()
+        {
+          var m = document.getElementById ("material2").value;
+          var t = document.getElementById ("type2").value;
+          var a = document.getElementById ("amount2").value;
+          var total;
+
+          if (a == "")
+          {
+            document.getElementById("cost2").innerHTML = "Amount must be filled";
+          }
+          else
+          {
+            // Copper 
+            if (m == "Copper" && t == "Nugget")
+            {
+              total = a * 0.05;
+            }
+            if (m == "Copper" && t == "Ingot")
+            {
+              total = a * 0.50;
+            }
+            if (m == "Copper" && t == "Block")
+            {
+              total = a * 4.5;
+            }
+
+            // Iron 
+            if (m == "Iron" && t == "Nugget")
+            {
+              total = a * 0.11;
+            }
+            if (m == "Iron" && t == "Ingot")
+            {
+              total = a * 1.00;
+            }
+            if (m == "Iron" && t == "Block")
+            {
+              total = a * 9.00;
+            }
+
+            // Gold
+            if (m == "Gold" && t == "Nugget")
+            {
+              total = a * 0.55;
+            }
+            if (m == "Gold" && t == "Ingot")
+            {
+              total = a * 5.00;
+            }
+            if (m == "Gold" && t == "Block")
+            {
+              total = a * 45.00;
+            }
+
+            // Diamond
+            if (m == "Diamond" && t == "Nugget")
+            {
+              total = a * 1.11;
+            }
+            if (m == "Diamond" && t == "Ingot")
+            {
+              total = a * 10.00;
+            }
+            if (m == "Diamond" && t == "Block")
+            {
+              total = a * 90.00;
+            }
+
+            // Emerald
+            if (m == "Emerald" && t == "Nugget")
+            {
+              total = a * 2.22;
+            }
+            if (m == "Emerald" && t == "Ingot")
+            {
+              total = a * 20.00;
+            }
+            if (m == "Emerald" && t == "Block")
+            {
+              total = a * 180.00;
+            }
+
+            // Netherite
+            if (m == "Netherite" && t == "Nugget")
+            {
+              total = a * 5.55;
+            }
+            if (m == "Netherite" && t == "Ingot")
+            {
+              total = a * 50.00;
+            }
+            if (m == "Netherite" && t == "Block")
+            {
+              total = a * 450.00;
+            }
+
+            document.getElementById("cost2").innerHTML = "Total: $" + total + " Elstreet Dollars";
+          }
+        }
+      </script>
+      <br><br>
+
+    </main>
+
+    <footer>
+      This site will be in consent development as items are added and changed.<br>
+      The production of this site is done in part by the Elstreet Federal Government<br>
+      Credit to GitHub for hosting the site, and uNmINeD for mapping tools and resources<br><br>
+      Website Version: 4.0 May 1, 2023
+    </footer>
+</div>
+
+</body>
+</html>

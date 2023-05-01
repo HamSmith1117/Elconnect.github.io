@@ -1,0 +1,134 @@
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="Site/css/elstreet.css"/>
+<head>
+<title>Elstreet Home Page</title>
+<link rel="icon" type="image/x-icon" href="Site/assest/favicon.ico">
+<meta charset="utf-8" name="viewport" content="width=device-width">
+</head>
+<body>
+
+<div id="wrapper">
+
+  <header>
+    <!--Header-->
+    <div id="desktheader">Elstreet<br>Communication</div>
+    <div class="dropdown">
+      <div id="mobileheader"align="center"><button onclick="myFunction()" class="dropbtn">Elstreet Communication</button></div>
+
+      <!--Navigation Bar for Mobile-->
+      <div align="center" id="myDropdown" class="dropdown-content">
+        <a href="index.html">
+          <img src="Site/assest/homeicon.png" alt="Home Page Link" style="width:17px;height:17px;">
+          Home
+        </a>
+        <a href="Site/news.html">
+          <img src="Site/assest/newsicon.png" alt="News Page Link" style="width:17px;height:17px;">
+          News
+        </a>
+        <a href="Site/government.html">
+          <img src="Site/assest/governmenticon.png" alt="Government Page Link" style="width:17px;height:17px;">
+          Government
+        </a>
+        <a href="Site/documents.html">
+          <img src="Site/assest/documentsicon.png" alt="Documents Page Link" style="width:18px;height:15px;">
+          Documents
+        </a>
+        <a href="Site/tools.html">
+          <img src="Site/assest/tools.png" alt="Tools Page Link" style="width:14px;height:17px;">
+          Tools
+        </a>
+      </div>
+    </div>
+
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+  </header>
+
+  <!--Navigation Bar for Desktop-->
+  <nav>
+    <a href="index.html">
+      <img src="Site/assest/homeicon.png" alt="Home Page Link" style="width:17px;height:17px;">
+      Home
+    </a>
+    &nbsp;&nbsp;
+    <a href="Site/news.html">
+      <img src="Site/assest/newsicon.png" alt="News Page Link" style="width:17px;height:17px;">
+      News
+    </a>
+    &nbsp;&nbsp;
+    <a href="Site/government.html">
+      <img src="Site/assest/governmenticon.png" alt="Government Page Link" style="width:17px;height:17px;">
+      Government
+    </a>
+    &nbsp;&nbsp;
+    <a href="Site/documents.html">
+      <img src="Site/assest/documentsicon.png" alt="Documents Page Link" style="width:18px;height:15px;">
+      Documents
+    </a>
+    &nbsp;&nbsp;
+    <a href="Site/tools.html">
+      <img src="Site/assest/tools.png" alt="Tools Page Link" style="width:14px;height:17px;">
+      Tools
+    </a>
+  </nav>
+
+    <main>
+
+      <h2 align="center">Welcome To Our Website</h2>
+      <br>
+
+      <!--Main Image-->
+      <div class="Image">
+        <table class="Imgtable" align="center">
+            <tr>
+              <th class="ImgTitle" style="width: 50%; color: white; font-weight: normal; text-align: left;">Elstreet City</th>
+              <th class="ImgLink" style="width: 50%; color: white; text-align: right; font-weight: normal;">
+                  Full Image :&nbsp;&nbsp;
+                  <a style="font-weight: normal;" href="Site/assest/Skyline.png">Skyline.png</a>&nbsp;
+              </th>
+          </tr>
+        </table>
+        <img src="Site/assest/Skyline.png" style="width: 100%;">
+      </div>
+      <br>
+
+      <div id="maintext">
+        <p align="center" class="textsize1" style="color:#3366CC;">This site is used as an access point to information and documents that may be useful for people who are involved and or interested in the ongoings of the Elstreet wrold.
+          <br><br>Expect to see postings of news events, and certain activities be hosted on the site.
+          <br><br>It is important to note that the site is in consistent state of development and the look and feel of the site may change as development continues.</p>
+      </div>
+
+      <br><br>
+
+    </main>
+
+    <footer>
+      This site will be in consent development as items are added and changed.<br>
+      The production of this site is done in part by the Elstreet Federal Government<br>
+      Credit to GitHub for hosting the site, and uNmINeD for mapping tools and resources<br><br>
+      Website Version: 4.0 May 1, 2023
+    </footer>
+
+</div>
+
+</body>
+</html>

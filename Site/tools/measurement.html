@@ -1,0 +1,487 @@
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="../css/elstreet.css"/>
+<head>
+<title>Elstreet Measurement Page</title>
+<link rel="icon" type="image/x-icon" href="../assest/favicon.ico">
+<meta charset="utf-8" name="viewport" content="width=device-width">
+</head>
+<body>
+
+<div id="wrapper">
+
+  <header>
+    <!--Header-->
+    <div id="desktheader">Elstreet<br>Communication</div>
+    <div class="dropdown">
+      <div id="mobileheader"align="center"><button onclick="myFunction()" class="dropbtn">Elstreet Communication</button></div>
+
+      <!--Navigation Bar for Mobile-->
+      <div align="center" id="myDropdown" class="dropdown-content">
+        <a href="../../index.html">
+          <img src="../assest/homeicon.png" alt="Home Page Link" style="width:17px;height:17px;">
+          Home
+        </a>
+        <a href="../news.html">
+          <img src="../assest/newsicon.png" alt="News Page Link" style="width:17px;height:17px;">
+          News
+        </a>
+        <a href="../government.html">
+          <img src="../assest/governmenticon.png" alt="Government Page Link" style="width:17px;height:17px;">
+          Government
+        </a>
+        <a href="../documents.html">
+          <img src="../assest/documentsicon.png" alt="Documents Page Link" style="width:18px;height:15px;">
+          Documents
+        </a>
+        <a href="../tools.html">
+          <img src="../assest/tools.png" alt="Tools Page Link" style="width:14px;height:17px;">
+          Tools
+        </a>
+      </div>
+    </div>
+
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+  </header>
+
+  <!--Navigation Bar for Desktop-->
+  <nav>
+    <a href="../../index.html">
+      <img src="../assest/homeicon.png" alt="Home Page Link" style="width:17px;height:17px;">
+      Home
+    </a>
+    &nbsp;&nbsp;
+    <a href="../news.html">
+      <img src="../assest/newsicon.png" alt="News Page Link" style="width:17px;height:17px;">
+      News
+    </a>
+    &nbsp;&nbsp;
+    <a href="../government.html">
+      <img src="../assest/governmenticon.png" alt="Government Page Link" style="width:17px;height:17px;">
+      Government
+    </a>
+    &nbsp;&nbsp;
+    <a href="../documents.html">
+      <img src="../assest/documentsicon.png" alt="Documents Page Link" style="width:18px;height:15px;">
+      Documents
+    </a>
+    &nbsp;&nbsp;
+    <a href="../tools.html">
+      <img src="../assest/tools.png" alt="Tools Page Link" style="width:14px;height:17px;">
+      Tools
+    </a>
+  </nav>
+
+      <main>
+        <h2 align=center id="minecraft">Measurement</h2>
+        <br>
+
+        <!--Area Calc Computer-->
+        <form class=areaFormComputer style="font-size: 12pt" action="/action page. php" id="defaultForm">
+          <p align="left" style="margin: 10px; color: #3366CC;" class="textsize1">Land Area</p>
+          <p align=left style="margin: 10px; color: gray;" class="textsize2">Enter the dimensions and select the area type you'll like to convert</p>
+          <hr style="margin-left: 10px; margin-right: 10px; border: 1px solid gray;">
+          <br>
+
+          Length: <input type="text" class="defaultInput" id="len">
+          &nbsp;&nbsp;
+          Width: <input type="text" class="defaultInput" id="wid">
+          <br>
+          Area:
+          <select id="areaSelect" class="defaultSelect" name="AreaSelect" style="width: 150px;">
+            <option value="blocks">Blocks</option>
+            <option value="squfeet">Square Feet</option>
+            <option value="squmeter">Square Meters</option>
+            <option value="acre">Acres</option>
+            <option value="hectare">Hectares</option>
+          </select>
+          &nbsp;&nbsp;
+          <input id="buttonlink" style="font-size: 10pt" type="button" onclick="area()" value="Calculate">&nbsp;&nbsp;
+          <input id="buttonlink" style="font-size: 10pt" type="reset" onclick="areaReset()" value="Clear">
+          <br>
+
+          <hr style="margin-left: 10px; margin-right: 10px; border: 1px solid gray;">
+
+          <p align="left" style="margin: 10px; color: #3366CC;" class="textsize1">Results</p>
+          <p id="area" class="textsize2" style="color: gray;"></p>
+          <br>
+        </form>
+
+        <!--Area Calc Phone-->
+        <form class=areaFormPhone style="font-size: 12pt" action="/action page. php" id="defaultForm">
+          <p align="left" style="margin: 10px; color: #3366CC;" class="textsize1">Land Area</p>
+          <p align=left style="margin: 10px; color: gray;" class="textsize2">Enter the dimensions and select the area type you'll like to convert</p>
+          <hr style="margin-left: 10px; margin-right: 10px; border: 1px solid gray;">
+          <br>
+
+          Length: <input type="text" class="defaultInput" id="len2">
+          <br>
+          Width: <input type="text" class="defaultInput" id="wid2">
+          <br>
+          Conver Area:
+          <select id="areaSelect2" class="defaultSelect" name="AreaSelect" style="width: 150px;">
+            <option value="blocks">Blocks</option>
+            <option value="squfeet">Square Feet</option>
+            <option value="squmeter">Square Meters</option>
+            <option value="acre">Acres</option>
+            <option value="hectare">Hectares</option>
+          </select>
+          <br>
+          <input id="buttonlink" style="font-size: 10pt" type="button" onclick="area2()" value="Calculate">&nbsp;&nbsp;
+          <input id="buttonlink" style="font-size: 10pt" type="reset" onclick="area2Reset()" value="Clear">
+          <br>
+
+          <hr style="margin-left: 10px; margin-right: 10px; border: 1px solid gray;">
+
+          <p align="left" style="margin: 10px; color: #3366CC;" class="textsize1">Results</p>
+          <p id="area2" class="textsize2" style="color: gray;"></p>
+          <br>
+        </form>
+      
+        <script>
+          function areaReset()
+          {
+            document.getElementById("area").innerHTML = " ";
+          }
+
+          function area2Reset()
+          {
+            document.getElementById("area2").innerHTML = " ";
+          }
+
+          function area()
+          {
+            var l = document.getElementById ("len").value;
+            var w = document.getElementById ("wid").value;
+            var t = document.getElementById ("areaSelect").value;
+            var a = (l * w);
+
+            if (t == "blocks")
+            {
+              document.getElementById("area").innerHTML = (a) + " blocks";
+            }
+            if (t == "squfeet")
+            {
+              document.getElementById("area").innerHTML = (a * 10.764) + " square feet";
+            }
+            if (t == "squmeter")
+            {
+              document.getElementById("area").innerHTML = (a) + " square meters";
+            }
+            if (t == "acre")
+            {
+              document.getElementById("area").innerHTML = (a / 4047) + " acres";
+            }
+            if (t == "hectare")
+            {
+              document.getElementById("area").innerHTML = (a / 10000) + " hectares";
+            }
+          }
+
+          function area2()
+          {
+            var l = document.getElementById ("len2").value;
+            var w = document.getElementById ("wid2").value;
+            var t = document.getElementById ("areaSelect2").value;
+            var a = (l * w);
+
+            if (t == "blocks")
+            {
+              document.getElementById("area2").innerHTML = (a) + " blocks";
+            }
+            if (t == "squfeet")
+            {
+              document.getElementById("area2").innerHTML = (a * 10.764) + " square feet";
+            }
+            if (t == "squmeter")
+            {
+              document.getElementById("area2").innerHTML = (a) + " square meters";
+            }
+            if (t == "acre")
+            {
+              document.getElementById("area2").innerHTML = (a / 4047) + " acres";
+            }
+            if (t == "hectare")
+            {
+              document.getElementById("area2").innerHTML = (a / 10000) + " hectares";
+            }
+          }
+        </script>
+
+        <br><br>
+
+        <!--Sign Length Generator-->
+        <form class=center style="font-size: 12pt" action="/action page. php" id="defaultForm">
+          <p align="left" style="margin: 10px; color: #3366CC;" class="textsize1">Concrete Sign</p>
+          <p align=left style="margin: 10px; color: gray;" class="textsize2">Get the legnth and material count for a concrete sign</p>
+          <hr style="margin-left: 10px; margin-right: 10px; border: 1px solid gray;">
+          <br>
+
+          Text: <input type="text" class="defaultInput" id="text">&nbsp;&nbsp;
+
+          <input id="buttonlink" style="font-size: 10pt" type="button" onclick="SignLengthFunction()" value="Calculate">&nbsp;&nbsp;
+          <input id="buttonlink" style="font-size: 10pt" type="reset" onclick="SignLengthFunctionReset()" value="Clear">
+
+          <br>
+          <hr style="margin-left: 10px; margin-right: 10px; border: 1px solid gray;">
+
+          <p align="left" style="margin: 10px; color: #3366CC;" class="textsize1">Results</p>
+
+          <br>
+          <p id="SignLength" class="textsize2" style="color: black;"></p>
+          <p id="Green" class="textsize2" style="color: #006e04;">
+          <p id="White" class="textsize2" style="color: gray;"></p>
+          <br>
+        </form>
+
+        <script>
+          function SignLengthFunctionReset()
+          {
+            document.getElementById("SignLength").innerHTML ="";
+            document.getElementById("Green").innerHTML ="";
+            document.getElementById("White").innerHTML ="";
+          }
+          
+          function SignLengthFunction()
+          {
+            var text = document.getElementById ("text").value;
+            text = text.toLowerCase();
+            var length = 2;
+            var green = 10;
+            var white = 0;
+
+            const CharacterArray = text.split("");
+            var arrayLength = CharacterArray.length;
+
+            for (var i = 0; i < arrayLength; i++)
+            {
+              if (CharacterArray[i] == " ")
+              {
+                length = length + 1;
+                white = white + 0;
+                green = green + 5;
+              }
+
+              if (CharacterArray[i] == "a")
+              {
+                length = length + 4;
+                white = white + 12;
+                green = green + 8;
+              }
+
+              if (CharacterArray[i] == "b")
+              {
+                length = length + 4;
+                white = white + 13;
+                green = green + 7;
+              }
+
+              if (CharacterArray[i] == "c")
+              {
+                length = length + 4;
+                white = white + 9;
+                green = green + 11;
+              }
+
+              if (CharacterArray[i] == "d")
+              {
+                length = length + 4;
+                white = white + 12;
+                green = green + 8;
+              }
+
+              if (CharacterArray[i] == "e")
+              {
+                length = length + 3;
+                white = white + 10;
+                green = green + 5;
+              }
+
+              if (CharacterArray[i] == "f")
+              {
+                length = length + 3;
+                white = white + 8;
+                green = green + 7;
+              }
+
+              if (CharacterArray[i] == "g")
+              {
+                length = length + 5;
+                white = white + 12;
+                green = green + 13;
+              }
+
+              if (CharacterArray[i] == "h")
+              {
+                length = length + 4;
+                white = white + 12;
+                green = green + 8;
+              }
+
+              if (CharacterArray[i] == "i")
+              {
+                length = length + 3;
+                white = white + 9;
+                green = green + 6;
+              }
+
+              if (CharacterArray[i] == "j")
+              {
+                length = length + 5;
+                white = white + 10;
+                green = green + 15;
+              }
+
+              if (CharacterArray[i] == "k")
+              {
+                length = length + 3;
+                white = white + 10;
+                green = green + 5;
+              }
+
+              if (CharacterArray[i] == "l")
+              {
+                length = length + 3;
+                white = white + 7;
+                green = green + 8;
+              }
+
+              if (CharacterArray[i] == "m")
+              {
+                length = length + 5;
+                white = white + 13;
+                green = green + 12;
+              }
+
+              if (CharacterArray[i] == "n")
+              {
+                length = length + 4;
+                white = white + 12;
+                green = green + 8;
+              }
+
+              if (CharacterArray[i] == "o")
+              {
+                length = length + 5;
+                white = white + 12;
+                green = green + 13;
+              }
+
+              if (CharacterArray[i] == "p")
+              {
+                length = length + 4;
+                white = white + 11;
+                green = green + 9;
+              }
+
+              if (CharacterArray[i] == "q")
+              {
+                length = length + 5;
+                white = white + 12;
+                green = green + 13;
+              }
+
+              if (CharacterArray[i] == "r")
+              {
+                length = length + 4;
+                white = white + 12;
+                green = green + 8;
+              }
+
+              if (CharacterArray[i] == "s")
+              {
+                length = length + 3;
+                white = white + 7;
+                green = green + 8;
+              }
+
+              if (CharacterArray[i] == "t")
+              {
+                length = length + 3;
+                white = white + 7;
+                green = green + 8;
+              }
+
+              if (CharacterArray[i] == "u")
+              {
+                length = length + 4;
+                white = white + 8;
+                green = green + 12;
+              }
+
+              if (CharacterArray[i] == "v")
+              {
+                length = length + 5;
+                white = white + 9;
+                green = green + 16;
+              }
+
+              if (CharacterArray[i] == "w")
+              {
+                length = length + 5;
+                white = white + 12;
+                green = green + 13;
+              }
+              
+              if (CharacterArray[i] == "x")
+              {
+                length = length + 3;
+                white = white + 9;
+                green = green + 6;
+              }
+
+              if (CharacterArray[i] == "y")
+              {
+                length = length + 3;
+                white = white + 8;
+                green = green +7;
+              }
+
+              if (CharacterArray[i] == "z")
+              {
+                length = length + 3;
+                white = white + 9;
+                green = green + 6;
+              }
+            }
+
+            var gap = arrayLength - 1;
+            length = length + gap;
+            
+            green = green + (gap * 5);
+            green = green + (length * 2);
+
+            document.getElementById("SignLength").innerHTML = "Sign Length: " + length;
+            document.getElementById("Green").innerHTML = "Green Concrete: " + green;
+            document.getElementById("White").innerHTML = "White Concrete: " + white;
+          }
+        </script>
+        <br><br>
+      </main>
+
+      <footer>
+        This site will be in consent development as items are added and changed.<br>
+        The production of this site is done in part by the Elstreet Federal Government<br>
+        Credit to GitHub for hosting the site, and uNmINeD for mapping tools and resources<br><br>
+        Website Version: 4.0 May 1, 2023
+      </footer>
+</div>
